@@ -1,0 +1,43 @@
+
+["battlemusic configs"]
+	#Volume of battle music, set to zero to mute
+	#Range: 0.0 ~ 5.0
+	volume = 5.0
+	#
+	#Whether battle music's volume is affected by the music slider
+	linked_to_music_volume = true
+	#
+	#How much the battle music changes in pitch when at low health    
+	#    > Values below zero shift the pitch down, above zero shift the pitch up    
+	#    > Set to zero to disable   
+	#Range: -0.5 ~ 1.0
+	health_pitch_amount = 0.05
+	#
+	#How much the battle music changes in pitch during the second phases of the Ender Dragon and Wither fights    
+	#    > Values below zero shift the pitch down, above zero shift the pitch up  
+	#    > Set to zero to disable     
+	#Range: -0.5 ~ 1.0
+	phase2_pitch_amount = 0.05
+	#
+	#At what HP should the battle music shift in pitch
+	#Range: > 1
+	health_pitch_thresh = 6
+	#
+	#Is the health threshold a percentage value?    
+	#    > If it is, the above value must be between 1 and 100    
+	health_pitch_percent = false
+	#
+	#How many seconds songs take to fade in and out
+	#Range: 0.0 ~ 10.0
+	fade_time = 1.0
+	#
+	#Entites and their respective songs, write in entity;song;priority format       
+	#    > entity = the entity's ID, eg. "minecraft:pig"       
+	#    > song = the song's ID, eg. "battlemusic:mini1"       
+	#    > priority = what precedence this song takes over other entity's music, eg. a priority of 1 will fade out and play over a priority of 0.      
+	entities_songs = ["minecraft:warden;battlemusic:cauldron;0", "minecraft:wither;battlemusic:wildfire;0", "alexsmobs:void_worm;battlemusic:kermetic;0", "cataclysm:ender_guardian;battlemusic:boss;0", "cataclysm:netherite_monstrosity;battlemusic:enderman;0", "cataclysm:ignis;battlemusic:summit;0", "cataclysm:the_harbinger;battlemusic:wither_storm;0", "cataclysm:the_leviathan;battlemusic:ghast;0", "cataclysm:ancient_remnant;battlemusic:necromancer;0", "cataclysm:maledictus;battlemusic:shattered;0", "bosses_of_mass_destruction:void_blossom;battlemusic:redstone_monstrosity;0", "bosses_of_mass_destruction:lich;battlemusic:broken_heart_of_ender;0", "bosses_of_mass_destruction:gauntlet;battlemusic:ancient;0", "bosses_of_mass_destruction:obsidilith;battlemusic:arena1;0", "aerialhell:mud_cycle_mage;battlemusic:metaluna;0", "aerialhell:lunatic_priest;battlemusic:metaluna;0", "aerialhell:chained_god;battlemusic:ascension;0", "aerialhell:lilith;battlemusic:arena2;0", "blue_skies:summoner;battlemusic:mini2;0", "blue_skies:starlit_crusher;battlemusic:mini2;0", "blue_skies:arachnarch;battlemusic:menta_menardi;0", "blue_skies:alchemist;battlemusic:ancient_guardian;0", "bloodandmadness:father_gascoigne;battlemusic:porcus_humungous;0", "bloodandmadness:gascoigne_beast;battlemusic:porcus_humungous;0", "bloodandmadness:micolash;battlemusic:wildfire;0", "awakened_bosses:herobrine;battlemusic:cauldron;0", "bossominium:skelenado_boss;battlemusic:kermetic;0", "bossominium:vengeful_trader_boss;battlemusic:mini1;0", "bossominium:netherrack_heart_boss;battlemusic:kermetic;0", "bossominium:end_stone_sentinel_boss;battlemusic:mini1;0", "bossominium:hell_hound_boss;battlemusic:kermetic;0", "bossominium:cultisager_boss;battlemusic:mini1;0", "bossominium:golden_ring_boss;battlemusic:kermetic;0", "bossominium:ancient_remnant_boss;battlemusic:mini1;0", "bossominium:huntress_boss;battlemusic:kermetic;0", "bossominium:strayed_warrior_boss;battlemusic:mini1;0", "bossominium:fungal_brute_boss;battlemusic:kermetic;0", "bossominium:moss_mech_boss;battlemusic:mini1;0", "bossominium:chorus_beast_boss;battlemusic:kermetic;0", "bossominium:morsemancer_boss;battlemusic:mini1;0"]
+	#
+	#A generic battle song to play for any other undefined hostile entity      
+	#    > Leave blank for no default battle music       
+	default_song = ""
+

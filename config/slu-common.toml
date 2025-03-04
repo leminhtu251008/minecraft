@@ -1,0 +1,433 @@
+
+[general]
+	#Decide to get start items on first connection.
+	"give start items" = true
+	#Decide to drop repairstone when player kills monster.
+	"drop repairstone" = true
+	#Decide to drop healingstone when player kills monster.
+	"drop healingstone" = true
+	#Decide to get buff when player wears souls-like armor. 
+	"armor passive" = true
+	#monster breaks boat.
+	"boat breaking" = false
+	#play boss theme music.
+	"play music" = true
+	#Boss destroys surrounding blocks.
+	"breaking blocks" = false
+	#Weapon trail appears when player attacks. 
+	"player weapon trail" = true
+	#Weapon trail appears when mob attacks. 
+	"mob weapon trail" = true
+	#bosses get stronger in proportion to the number (maximum number is 5)
+	"boss power up" = 5.0
+	#If bosses are not damaged for @ seconds, they will despawn. (0 = no despawn)
+	"boss duration" = 0.0
+
+[hollow]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[nightmare_knight]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[armed_hollow]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[temple_gaurd]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[knight]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[bad_omen_giant]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[twisted_souls]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[hollow_soldier]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[dungeon_knight]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[elite_knight]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[castle_guard]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[mad_knight]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[crusader]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[dark_knight]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[thief]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[magma_giant]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[siegmeyer]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[solaire]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[wither_skeleton_knight]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[shadow_assassin]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[noble_knight]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[hollow_knight]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[ringed_knight]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[executor]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[crucible_knight]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[dark_spirit]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[patches]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[havel]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[blasphemy_knight]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[ghost_samurai]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[tower_knight]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[successor]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[godrick_soldier]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+
+[godrick_knight]
+	#1=overworld / 2=nether / 3=end
+	"spawn dimension" = 2.0
+	#Souls-like mobs are spawned only on the ground.
+	"surface spawn" = true
+	#Decide if this mob will spawn with low chance.
+	"low spawn chance" = true
+	#Decide if this mob is naturally spawned.
+	"no spawn" = false
+	#Monster gets stronger in proportion to the number (maximum number is 5)
+	"power up" = 0.0
+

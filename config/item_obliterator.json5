@@ -1,0 +1,203 @@
+{
+  // -----------------------------------------------------------
+  //              Item Obliterator by ElocinDev
+  // -----------------------------------------------------------
+  //  
+  // How to add items?
+  //   - They are json strings, so you need to separate each
+  //     entry with a comma, except the last
+  //   - If you start an entry with !, it will be treated as a regular expression
+  //     Example: "!minecraft:.*_sword" to disable all swords
+  //  
+  // -----------------------------------------------------------
+  // Do not touch this
+  "configVersion": 2,
+  // -----------------------------------------------------------
+  // Items here will be unusable completely
+  //    Example: minecraft:diamond
+  "blacklisted_items": [
+    "slu:boss_aatrox_spawn_egg",
+    "slu:boss_jax_spawn_egg",
+    "slu:boss_wukong_spawn_egg",
+    "slu:boss_darius_spawn_egg",
+    "slu:boss_gundyr_spawn_egg",
+    "slu:boss_gwyndolin_spawn_egg",
+    "slu:boss_ornstein_spawn_egg",
+    "slu:boss_artorias_spawn_egg",
+    "slu:boss_looking_glass_knight_spawn_egg",
+    "slu:boss_abyss_watcher_spawn_egg",
+    "slu:boss_dragon_slayer_armour_spawn_egg",
+    "slu:boss_nameless_king_spawn_egg",
+    "slu:boss_gael_spawn_egg",
+    "slu:boss_soul_of_cinder_spawn_egg",
+    "slu:boss_godskin_apostle_spawn_egg",
+    "slu:boss_margit_spawn_egg",
+    "slu:boss_rahdahn_spawn_egg",
+    "slu:boss_malenia_spawn_egg",
+    "slu:boss_godfrey_spawn_egg",
+    "slu:boss_beast_clergyman_spawn_egg",
+    "slu:boss_radagon_spawn_egg",
+    "slu:boss_elemer_spawn_egg",
+    "slu:boss_crucible_knight_spawn_egg",
+    "slu:boss_mohg_spawn_egg",
+    "slu:boss_count_robert_spawn_egg",
+    "slu:boss_fallen_lord_spawn_egg",
+    "slu:boss_ancient_warrior_spawn_egg",
+    "slu:boss_pantheon_spawn_egg",
+    "slu:boss_notch_spawn_egg",
+    "slu:jax_soul",
+    "slu:wukong_soul",
+    "slu:darius_soul",
+    "slu:pantheon_soul",
+    "slu:spawn_magic_jax",
+    "slu:spawn_magic_wukong",
+    "slu:spawn_magic_darius",
+    "slu:spawn_magic_pantheon",
+    "slu:spawn_magic_aatrox",
+    "slu:aatrox_soul",
+    "slu:aatrox_helmet",
+    "slu:aatrox_chestplate",
+    "slu:aatrox_leggings",
+    "slu:aatrox_boots",
+    "slu:aatrox_sword",
+    "slu:bloodmoon_aatrox_helmet",
+    "slu:bloodmoon_aatrox_chestplate",
+    "slu:bloodmoon_aatrox_leggings",
+    "slu:bloodmoon_aatrox_boots",
+    "slu:bloodmoon_aatrox_sword",
+    "slu:prestige_aatrox_helmet",
+    "slu:prestige_aatrox_chestplate",
+    "slu:prestige_aatrox_leggings",
+    "slu:prestige_aatrox_boots",
+    "slu:prestige_aatrox_sword",
+    "slu:drx_aatrox_helmet",
+    "slu:drx_aatrox_chestplate",
+    "slu:drx_aatrox_leggings",
+    "slu:drx_aatrox_boots",
+    "slu:drx_aatrox_sword",
+    "slu:prestige_drx_aatrox_helmet",
+    "slu:prestige_drx_aatrox_chestplate",
+    "slu:prestige_drx_aatrox_leggings",
+    "slu:prestige_drx_aatrox_boots",
+    "slu:prestige_drx_aatrox_sword",
+    "slu:prestige_bloodmoon_aatrox_helmet",
+    "slu:prestige_bloodmoon_aatrox_chestplate",
+    "slu:prestige_bloodmoon_aatrox_leggings",
+    "slu:prestige_bloodmoon_aatrox_boots",
+    "slu:prestige_bloodmoon_aatrox_sword",
+    "slu:justicar_aatrox_helmet",
+    "slu:justicar_aatrox_chestplate",
+    "slu:justicar_aatrox_leggings",
+    "slu:justicar_aatrox_boots",
+    "slu:justicar_aatrox_sword",
+    "slu:lunar_eclipse_aatrox_helmet",
+    "slu:lunar_eclipse_aatrox_chestplate",
+    "slu:lunar_eclipse_aatrox_leggings",
+    "slu:lunar_eclipse_aatrox_boots",
+    "slu:lunar_eclipse_aatrox_sword",
+    "slu:victorious_aatrox_helmet",
+    "slu:victorious_aatrox_chestplate",
+    "slu:victorious_aatrox_leggings",
+    "slu:victorious_aatrox_boots",
+    "slu:victorious_aatrox_sword",
+    "slu:primordian_aatrox_helmet",
+    "slu:primordian_aatrox_chestplate",
+    "slu:primordian_aatrox_leggings",
+    "slu:primordian_aatrox_boots",
+    "slu:primordian_aatrox_sword",
+    "slu:mecha_aatrox_helmet",
+    "slu:mecha_aatrox_chestplate",
+    "slu:mecha_aatrox_leggings",
+    "slu:mecha_aatrox_boots",
+    "slu:mecha_aatrox_sword",
+    "slu:legendary_aatrox_sword",
+    "slu:legendary_bloodmoon_aatrox_sword",
+    "slu:legendary_prestige_aatrox_sword",
+    "slu:legendary_drx_aatrox_sword",
+    "slu:legendary_prestige_drx_aatrox_sword",
+    "slu:legendary_prestige_bloodmoon_aatrox_sword",
+    "slu:legendary_justicar_aatrox_sword",
+    "slu:legendary_lunar_eclipse_aatrox_sword",
+    "slu:legendary_victorious_aatrox_sword",
+    "slu:legendary_primordian_aatrox_sword",
+    "slu:legendary_mecha_aatrox_sword",
+    "slu:talon_helmet",
+    "slu:talon_chestplate",
+    "slu:talon_leggings",
+    "slu:talon_boots",
+    "slu:talon_claw",
+    "slu:wukong_helmet",
+    "slu:wukong_chestplate",
+    "slu:wukong_leggings",
+    "slu:wukong_boots",
+    "slu:jingubang",
+    "slu:legendary_jingubang",
+    "slu:elderwood_wukong_helmet",
+    "slu:elderwood_wukong_chestplate",
+    "slu:elderwood_wukong_leggings",
+    "slu:elderwood_wukong_boots",
+    "slu:elderwood_jingubang",
+    "smallships:cannon",
+    "smallships:cannon_ball",
+    "immersive_aircraft:biplane",
+    "immersive_aircraft:quadrocopter",
+    "immersive_aircraft:gyrodyne",
+    "immersive_aircraft:rotary_cannon",
+    "immersive_aircraft:heavy_crossbow",
+    "immersive_aircraft:bomb_bay",
+    "minecraft:tnt",
+    "minecraft:tnt_minecart",
+    "memory_of_the_past:codex_of_ascension",
+    "bloodandmadness:weapons/hunter_pistol",
+    "bloodandmadness:bullets/copper_bullet",
+    "bloodandmadness:bullets/iron_bullet",
+    "bloodandmadness:bullets/golden_bullet",
+    "bloodandmadness:bullets/netherite_bullet",
+    "bloodandmadness:bullets/fire_bullet",,
+    "bloodandmadness:bullets/explosive_bullet",
+    "bloodandmadness:bullets/poisonous_bullet",
+    "bloodandmadness:bullets/withering_bullet",
+    "bloodandmadness:bullets/glowing_bullet",
+    "bloodandmadness:bullets/electric_bullet",
+    "bloodandmadness:bullets/sniper_bullet",
+    "cataclysm:final_fractal",
+    "blue_skies:summoner_spawn_egg",
+    "blue_skies:alchemist_spawn_egg",
+    "blue_skies:starlit_crusher_spawn_egg",
+    "blue_skies:arachnarch_spawn_egg"
+  ],
+  // -----------------------------------------------------------
+  // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
+  // Use with caution! This is a very expensive operation and can cause lag if you have a lot of items blacklisted.
+  // 	
+  // 	 Example to disable a regeneration potion: Potion:"minecraft:regeneration"
+  // 	
+  // 	 You can also use regular expressions by starting the value with !
+  "blacklisted_nbt": [],
+  // -----------------------------------------------------------
+  // Items here will not be able to be right-clicked (Interact)
+  //    Example: minecraft:apple
+  "only_disable_interactions": [
+    "examplemod:example_item"
+  ],
+  // -----------------------------------------------------------
+  // Items here will not be able to be used to attack
+  //    Example: minecraft:diamond_sword
+  "only_disable_attacks": [
+    "examplemod:example_item"
+  ],
+  // -----------------------------------------------------------
+  // Items here will get their recipes disabled
+  // Keep in mind this already is applied to blacklisted items
+  "only_disable_recipes": [
+    "examplemod:example_item"
+  ],
+  // -----------------------------------------------------------
+  // If true, the mod will use a hashset to handle the blacklisted items
+  // This is a more optimized approach only if you have a lot of items blacklisted (20 or more is recommended)
+  // If you just have a small amount of items blacklisted, keep this false
+  //  
+  // [!] Enabling this will disable all regular expressions
+  // [!] Does not apply to NBT, only item blacklist / interaction / attack
+  "use_hashmap_optimizations": false
+}

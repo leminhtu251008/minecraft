@@ -1,0 +1,6 @@
+
+[bosses]
+	#bosses above this health are considered bosses
+	min_health = 5000.0
+	division = 180.0
+

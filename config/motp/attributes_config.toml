@@ -1,0 +1,81 @@
+
+["Attribute 1"]
+	display_name = "Vitality : "
+	cmd_to_exc = ["/attribute @p generic.max_health base set", "/effect give @p minecraft:health_boost 2 3"]
+	tip_to_display = "§7Represents your overall durability. §7More health means you can survive longer in battle"
+	max_level = 60.0
+	base_value_per_point = 0.5
+	lock = false
+
+["Attribute 2"]
+	display_name = "Attack Power : "
+	cmd_to_exc = ["/attribute @p generic.attack_damage base set [param(0.2)]"]
+	tip_to_display = "§7Defines the amount of harm you can inflict with each attack. "
+	max_level = 50.0
+	base_value_per_point = 1.0
+	lock = false
+
+["Attribute 3"]
+	display_name = "Attack Speed : "
+	cmd_to_exc = ["/attribute @p generic.attack_speed base set [param(0.092)]"]
+	tip_to_display = "§7Determines how quickly you can swing your weapon. "
+	max_level = 50.0
+	base_value_per_point = 0.2
+	lock = false
+
+["Attribute 4"]
+	display_name = "Protection : "
+	cmd_to_exc = ["/attribute @p generic.armor base set [param(0.2)]"]
+	tip_to_display = "§7Reduces the amount of damage you take from enemy attacks"
+	max_level = 50.0
+	base_value_per_point = 1.0
+	lock = false
+
+["Attribute 5"]
+	display_name = "Agility : "
+	cmd_to_exc = ["/attribute @p generic.movement_speed base set [param(0.003)]"]
+	tip_to_display = "§7Influences how fast you can move"
+	max_level = 50.0
+	base_value_per_point = 1.0
+	lock = false
+
+["Attribute 6"]
+	display_name = "Armor Toughness : "
+	cmd_to_exc = ["/attribute @p generic.luck base set [param(0.2)]"]
+	tip_to_display = "§7Increase the amount of damage needed to penentrate your armor"
+	max_level = 50.0
+	base_value_per_point = 1.0
+	lock = false
+
+["Attribute 7"]
+	display_name = "Exploration : "
+	cmd_to_exc = ["/attribute @p generic.luck base set [param(0.5)]"]
+	tip_to_display = "§7Influences the chances of receiving better loot or triggering beneficial events"
+	max_level = 50.0
+	base_value_per_point = 2.0
+	lock = false
+
+["Attribute 8"]
+	display_name = "Fortitude : "
+	cmd_to_exc = ["/attribute @p generic.knockback_resistance base set [param(0.01)]"]
+	tip_to_display = "§7Reduces the distance you are pushed back when hit by an enemy or explosion"
+	max_level = 50.0
+	base_value_per_point = 2.0
+	lock = false
+
+["Attribute 9"]
+	"display_name " = "Penetration : "
+	cmd_to_exc = ["/attribute @p epicfight:armor_negation base set"]
+	"tip_to_display " = "§7Reduce the amount of damage needed to penentrate enemy's armor"
+	max_level = 50.0
+	base_value_per_point = 1.0
+	lock = false
+
+["Attribute 10"]
+	"display_name " = "Stamina : "
+	cmd_to_exc = ["/attribute @p epicfight:staminar base set [param(0.8)]"]
+	"tip_to_display " = "§7Increase the stamina pool, allows you to perform more actions in combat"
+	max_level = 55.0
+	base_value_per_point = 0.5
+	lock = false
+

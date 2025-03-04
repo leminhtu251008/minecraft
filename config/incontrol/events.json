@@ -1,0 +1,12 @@
+[
+    {
+        "on": "mob_killed",
+        "parameters": {
+            "mob": "bloodandmadness:father_gascoigne",
+            "player": true
+        },
+        "spawn": {
+            "mob": "bloodandmadness:gascoigne_beast"
+        }
+    }
+]

@@ -1,0 +1,19 @@
+[
+    {
+        "timeout": 20,
+        "dimension": [
+            "aerialhell:aerial_hell",
+            "blue_skies:everdawn",
+            "blue_skies:everbright"
+        ],
+        "helditem": [
+            "iceandfire:dragonsteel_ice_sword",
+            "iceandfire:dragonsteel_lightning_sword",
+            "iceandfire:dragonsteel_fire_sword"
+        ],
+        "potion": [
+            "minecraft:slowness,20,5",
+            "minecraft:darkness,20,1"
+        ]
+    }
+]

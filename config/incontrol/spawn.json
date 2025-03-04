@@ -1,0 +1,779 @@
+[
+    {
+        "mob": "cataclysm:ender_guardian",
+        "when": "onjoin",
+        "result": "allow",
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:resistance,-1,3",
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "cataclysm:netherite_monstrosity",
+        "when": "onjoin",
+        "result": "allow",
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:resistance,-1,3",
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "cataclysm:ignis",
+        "when": "onjoin",
+        "result": "allow",
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:resistance,-1,3",
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "cataclysm:the_harbinger",
+        "when": "onjoin",
+        "result": "allow",
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:resistance,-1,3",
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "cataclysm:the_leviathan",
+        "when": "onjoin",
+        "result": "allow",
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:resistance,-1,3",
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "cataclysm:ancient_remnant",
+        "when": "onjoin",
+        "result": "allow",
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:resistance,-1,3",
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "cataclysm:ancient_ancient_remnant",
+        "when": "onjoin",
+        "result": "allow",
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:resistance,-1,3",
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "cataclysm:maledictus",
+        "when": "onjoin",
+        "result": "allow",
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:resistance,-1,3",
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "bloodandmadness:father_gascoigne",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 40000,
+        "damageset": 100,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:resistance,-1,3",
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "bloodandmadness:gascoigne_beast",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 40000,
+        "damageset": 120,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:resistance,-1,3",
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "bloodandmadness:micolash",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 100000,
+        "damageset": 120,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:resistance,-1,3",
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "bloodandmadness:skeletal_puppet",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 8000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:resistance,-1,3",
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "bossominium:skelenado_boss",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 8000,
+        "armorset": 12,
+        "armortoughnessset": 10
+    },
+    {
+        "mob": "bossominium:vengeful_trader_boss",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 8000,
+        "damageset": 20,
+        "armorset": 20,
+        "armortoughnessset": 10
+    },
+    {
+        "mob": "bossominium:netherrack_heart_boss",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 8000,
+        "damageset": 18,
+        "armorset": 20,
+        "armortoughnessset": 10
+    },
+    {
+        "mob": "bossominium:blood_shot_entity",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 500,
+        "damageset": 12,
+        "armorset": 20,
+        "armortoughnessset": 10
+    },
+    {
+        "mob": "bossominium:end_stone_sentinel_boss",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 8000,
+        "damageset": 12,
+        "armorset": 20,
+        "armortoughnessset": 10
+    },
+    {
+        "mob": "bossominium:hell_hound_boss",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 8000,
+        "damageset": 12,
+        "armorset": 20,
+        "armortoughnessset": 10
+    },
+    {
+        "mob": "bossominium:cultisager_boss",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 8000,
+        "damageset": 12,
+        "armorset": 20,
+        "armortoughnessset": 10
+    },
+    {
+        "mob": "bossominium:golden_ring_boss",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 8000,
+        "damageset": 20,
+        "armorset": 20,
+        "armortoughnessset": 10
+    },
+    {
+        "mob": "bossominium:ancient_remnant_boss",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 8000,
+        "damageset": 12,
+        "armorset": 20,
+        "armortoughnessset": 10
+    },
+    {
+        "mob": "bossominium:huntress_boss",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 8000,
+        "damageset": 25,
+        "armorset": 20,
+        "armortoughnessset": 10
+    },
+    {
+        "mob": "bossominium:strayed_warrior_boss",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 8000,
+        "damageset": 18,
+        "armorset": 20,
+        "armortoughnessset": 10
+    },
+    {
+        "mob": "bossominium:fungal_brute_boss",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 8000,
+        "damageset": 12,
+        "armorset": 20,
+        "armortoughnessset": 10
+    },
+    {
+        "mob": "bossominium:moss_mech_boss",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 8000,
+        "damageset": 12,
+        "armorset": 20,
+        "armortoughnessset": 10
+    },
+    {
+        "mob": "bossominium:chorus_beast_boss",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 8000,
+        "damageset": 12,
+        "armorset": 20,
+        "armortoughnessset": 10
+    },
+    {
+        "mob": "bossominium:morsemancer_boss",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 8000,
+        "damageset": 12,
+        "armorset": 20,
+        "armortoughnessset": 10
+    },
+    {
+        "mob": "slu:boss_gundyr",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_gwyndolin",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_ornstein",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_smough",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_artorias",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_looking_glass_knight",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_abyss_watcher",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_dragon_slayer_armour",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_nameless_king",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_gael",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_soul_of_cinder",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 80000,
+        "damageset": 100,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_godskin_apostle",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_godskin_noble",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_margit",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 100000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_radahn",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_radahn_2",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_malenia",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 100000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_malenia_2",
+        "when": "onjoin",
+        "result": "allow",
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_godfrey",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_hoarah_loux",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_beast_clergyman",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_maliketh",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_radagon",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 80000,
+        "damageset": 100,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_elden_beast",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 80000,
+        "damageset": 100,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_elemer",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 100000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_crucible_knight",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 100000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_mohg",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 120000,
+        "damageset": 100,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_count_robert",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 100000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_fallen_lord",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 100000,
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_ancient_warrior",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 120000,
+        "damageset": 100,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "slu:boss_minecraft_lord",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 100,
+        "potion": "minecraft:glowing,-1,1"
+    },
+    {
+        "mob": "awakened_bosses:herobrine",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 120000,
+        "damageset": 150,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:resistance,-1,3",
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "bosses_of_mass_destruction:lich",
+        "when": "onjoin",
+        "result": "allow",
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:resistance,-1,3",
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "bosses_of_mass_destruction:gauntlet",
+        "when": "onjoin",
+        "result": "allow",
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:resistance,-1,3",
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "bosses_of_mass_destruction:obsidilith",
+        "when": "onjoin",
+        "result": "allow",
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:resistance,-1,3",
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "bosses_of_mass_destruction:void_blossom",
+        "when": "onjoin",
+        "result": "allow",
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:resistance,-1,3",
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "aerialhell:mud_cycle_mage",
+        "when": "finalize",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 100,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "aerialhell:lunatic_priest",
+        "when": "finalize",
+        "result": "allow",
+        "healthset": 60000,
+        "damageset": 100,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "aerialhell:chained_god",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 70000,
+        "damageset": 120,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "aerialhell:lilith",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 80000,
+        "damageset": 150,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": [
+            "minecraft:regeneration,-1,31",
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "blue_skies:summoner",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 5000,
+        "damageset": 80,
+        "potion": [
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "blue_skies:alchemist",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 5000,
+        "damageset": 80,
+        "potion": [
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "blue_skies:starlit_crusher",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 8000,
+        "damageset": 60,
+        "potion": [
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "blue_skies:arachnarch",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 8000,
+        "damageset": 60,
+        "potion": [
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "blue_skies:snow_owl",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 500,
+        "damageset": 40,
+        "potion": [
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "graveyard:ghouling",
+        "when": "onjoin",
+        "damageset": 80,
+        "armorset": 30,
+        "armortoughnessset": 20,
+        "potion": "minecraft:resistance,-1,4"
+    },
+    {
+        "mob": "minecraft:ender_dragon",
+        "when": "onjoin",
+        "healthset": 60000,
+        "damageset": 70,
+        "armorset": 30,
+        "armortoughnessset": 20
+    },
+    {
+        "mob": "minecraft:wither",
+        "when": "onjoin",
+        "healthset": 60000,
+        "damageset": 70,
+        "armorset": 30,
+        "armortoughnessset": 20
+    }
+]
