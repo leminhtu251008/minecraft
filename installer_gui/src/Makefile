@@ -2,7 +2,8 @@
 CC = gcc
 
 # Compiler flags
-CFLAGS = -mwindows -lwinmm
+CFLAGS = -mwindows
+LDFLAGS = -lwinmm -lwininet -lshlwapi
 
 # Source file
 SRC = installer_gui.c
@@ -26,7 +27,7 @@ $(EXE): $(SRC) $(RES)
 	@if [ ! -d $(BUILD_OUTPUT_DIR) ]; then mkdir $(BUILD_OUTPUT_DIR); fi
 	@if [ ! -d $(OUTPUT_DIR) ]; then mkdir $(OUTPUT_DIR); fi
 	windres $(RES) -o $(OBJS)
-	$(CC) $(SRC) $(OBJS) -o $(EXE) $(CFLAGS)
+	$(CC) $(SRC) $(OBJS) -o $(EXE) $(CFLAGS) $(LDFLAGS)
 
 # Clean target
 clean:
