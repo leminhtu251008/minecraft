@@ -1,0 +1,5 @@
+#include "resource.h"
+
+IDR_MUSIC1 WAVE "../resources/fantastical_grimoire_bgm.wav"
+IDB_BACKGROUND BITMAP "../resources/lender_cataclysm.bmp"
+IDI_APP_ICON ICON "../resources/wizard.ico"
