@@ -4,7 +4,7 @@ param (
     [string[]]$files
 )
 
-$ignored_folders_and_files = @(".git", "build", "README.md", ".gitignore", ".gitattributes", "autobuild.ps1")
+$ignored_folders_and_files = @(".git", "build", "README.md", ".gitignore", ".gitattributes", "autobuild.ps1", "installer_gui", ".vscode", "LICENSE
 
 function Copy-Source {
     param (

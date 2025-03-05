@@ -3,3 +3,4 @@ mods/battlemusic-1.20.1-1.1.1.jar filter=lfs diff=lfs merge=lfs -text
 mods/L_Enders_Cataclysm-2.27[[:space:]]-[[:space:]]1.20.1.jar filter=lfs diff=lfs merge=lfs -text
 mods/aerialhell-0.7.0_forge1.20.1.jar filter=lfs diff=lfs merge=lfs -text
 mods/[forge]slu_135.1.20.1.jar filter=lfs diff=lfs merge=lfs -text
+installer_gui/resources/fantastical_grimoire_bgm.wav filter=lfs diff=lfs merge=lfs -text
