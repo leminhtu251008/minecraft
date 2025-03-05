@@ -4,7 +4,7 @@ param (
     [string[]]$files
 )
 
-$ignored_folders_and_files = @(".git", "build", "README.md", ".gitignore", ".gitattributes", "autobuild.ps1", "installer_gui", ".vscode", "LICENSE
+$ignored_folders_and_files = @(".git", "build", "README.md", ".gitignore", ".gitattributes", "autobuild.ps1", "installer_gui", ".vscode")
 
 function Copy-Source {
     param (
@@ -55,19 +55,32 @@ if (-Not (Test-Path $buildOutputDir)) {
 
 Remove-Item -Path $buildOutputDir\* -Recurse -Force
 
+Start-Sleep -s 2
+
+$additionalFilesDirectory = "."
+
 if ($mode -eq "full") {
     $folders = Get-ChildItem -Directory | ForEach-Object { $_.Name }
     $folders = $folders | Where-Object { $ignored_folders_and_files -notcontains $_ }
-    Copy-Source -folders $folders -destination $buildOutputDir
+    $additionalFiles = Get-ChildItem -Path $additionalFilesDirectory | ForEach-Object { $_.Name }
+    $additionalFiles = $additionalFiles | Where-Object { $ignored_folders_and_files -notcontains $_ }
+    $folders += $additionalFiles # Include all files from the additional directory
+    Copy-Source -folders_and_files $folders -destination $buildOutputDir
 } elseif ($mode -eq "update") {
     $changedFiles = Get-ChangedFiles
+    $additionalFiles = Get-ChildItem -Path $additionalFilesDirectory | ForEach-Object { $_.FullName }
+    $changedFiles += $additionalFiles # Include all files from the additional directory
     Copy-Source -folders_and_files $changedFiles -destination $buildOutputDir
 } elseif ($mode -eq "test") {
+    $additionalFiles = Get-ChildItem -Path $additionalFilesDirectory | ForEach-Object { $_.FullName }
+    $files += $additionalFiles # Include all files from the additional directory
     Copy-Source -folders_and_files $files -destination $buildOutputDir
 } else {
     Write-Error "Invalid mode specified. Use 'full', 'update', or 'test'."
     exit 1
 }
+
+Start-Sleep -s 2
 
 $outputDir = Join-Path -Path (Get-Location) -ChildPath "build/output"
 if (-Not (Test-Path $outputDir)) {
