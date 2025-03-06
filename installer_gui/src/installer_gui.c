@@ -201,6 +201,19 @@ void DeleteOldFoldersAndFiles(const char* basePath)
     }
 }
 
+BOOL CheckExtractSuccess(const char* extractToDirectory)
+{
+    char path[MAX_PATH] = {0};
+    int len = sizeof(old_folders_and_files) / sizeof(old_folders_and_files[0]);
+    for (int i = 0; i < len; i++)
+    {
+        snprintf(path, MAX_PATH, "%s\\%s", extractToDirectory, old_folders_and_files[i]);
+        if (!PathFileExists(path)) return FALSE;
+    }
+    return TRUE;
+}
+
+
 DWORD WINAPI DownloadThreadProc(LPVOID lpParam)
 {
     BOOL bResult = FALSE;
@@ -480,6 +493,16 @@ extract:
         MessageBoxW(
             hWnd,
             L"Không thể giải nén tệp ZIP",
+            L"Lỗi",
+            MB_OK | MB_ICONERROR
+        );
+        goto cleanup;
+    }
+
+    if (!CheckExtractSuccess(minecraftDirectory)) {
+        MessageBoxW(
+            hWnd,
+            L"Giải nén không thành công. Vui lòng thử lại với quyền admin!",
             L"Lỗi",
             MB_OK | MB_ICONERROR
         );
