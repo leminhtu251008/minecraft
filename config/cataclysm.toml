@@ -17,7 +17,7 @@
 
 [Weapon]
 	#Armor Infinity Durability(on/off)
-	"Armor Infinity Durability(on/off)" = false
+	"Armor Infinity Durability(on/off)" = true
 	#Bulwark of the Flame's Cooldown
 	#Range: 0 ~ 1000000
 	BulwarkOfTheFlameCooldown = 80
@@ -134,7 +134,7 @@
 	EnderGuardianHealthMultiplier = 250.0
 	#EnderGuardian's Damage Multiplier
 	#Range: 0.0 ~ 1000000.0
-	EnderGuardianDamageMultiplier = 6.0
+	EnderGuardianDamageMultiplier = 7.0
 	#EnderGuardian's DamageCap
 	#Range: 0.0 ~ 1000000.0
 	EnderGuardianDamageCap = 200.0
@@ -186,10 +186,10 @@
 	MonstrosityHealthMultiplier = 250.0
 	#Monstrosity's Damage Multiplier
 	#Range: 0.0 ~ 1000000.0
-	MonstrosityDamageMultiplier = 6.0
+	MonstrosityDamageMultiplier = 7.0
 	#Monstrosity's Healing Multiplier
 	#Range: 0.0 ~ 1000000.0
-	MonstrosityHealingMultiplier = 20.0
+	MonstrosityHealingMultiplier = 5.0
 	# Monstrosity's Healing with out target
 	#Range: 0.0 ~ 1000000.0
 	MonstrosityNatureHealing = 20000.0
@@ -224,13 +224,13 @@
 	IgnisHealthMultiplier = 300.0
 	#Ignis's Damage Multiplier
 	#Range: 0.0 ~ 1000000.0
-	IgnisDamageMultiplier = 6.0
+	IgnisDamageMultiplier = 7.0
 	#Ignis's Healing with out target
 	#Range: 0.0 ~ 1000000.0
 	IgnisNatureHealing = 20000.0
 	#Ignis's Healing Multiplier
 	#Range: 0.0 ~ 1000000.0
-	IgnisHealingMultiplier = 20.0
+	IgnisHealingMultiplier = 5.0
 	#Ignis's Immune to Long distance attack range.
 	#Range: 1.0 ~ 1000000.0
 	"Ignis's prevent attacks from far away Range" = 10.0
@@ -265,10 +265,10 @@
 	HarbingerHealthMultiplier = 250.0
 	#Harbinger's Damage Multiplier
 	#Range: 0.0 ~ 1000000.0
-	HarbingerDamageMultiplier = 6.0
+	HarbingerDamageMultiplier = 7.0
 	#Harbinger's Healing Multiplier
 	#Range: 0.0 ~ 1000000.0
-	HarbingerHealingMultiplier = 20.0
+	HarbingerHealingMultiplier = 5.0
 	#Harbinger's Wither Missile's Damage
 	#Range: 0.0 ~ 1000000.0
 	"Harbinger's WitherMissiledamage" = 40.0
@@ -293,7 +293,7 @@
 	LeviathanHealthMultiplier = 300.0
 	#Leviathan's Damage Multiplier
 	#Range: 0.0 ~ 1000000.0
-	LeviathanDamageMultiplier = 6.0
+	LeviathanDamageMultiplier = 7.0
 	#Leviathan's Healing with out target
 	#Range: 0.0 ~ 1000000.0
 	LeviathanNatureHealing = 20000.0
@@ -353,7 +353,7 @@
 	AncientRemnantHealthMultiplier = 300.0
 	#Ancient Remnant's Damage Multiplier
 	#Range: 0.0 ~ 1000000.0
-	AncientRemnantDamageMultiplier = 6.0
+	AncientRemnantDamageMultiplier = 7.0
 	#AncientRemnant's Healing with out target
 	#Range: 0.0 ~ 1000000.0
 	AncientRemnantNatureHealing = 20000.0
@@ -418,7 +418,7 @@
 	MaledictusHealthMultiplier = 350.0
 	#Maledictus's Damage Multiplier
 	#Range: 0.0 ~ 1000000.0
-	MaledictusDamageMultiplier = 7.0
+	MaledictusDamageMultiplier = 8.0
 	#Maledictus's Immune to Long distance attack range.
 	#Range: 1.0 ~ 1000000.0
 	"Maledictus's prevent attacks from far away Range" = 12.0

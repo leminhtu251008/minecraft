@@ -1,4 +1,7 @@
 {
+  "framedblocks": {
+    "framed_item_frame": true
+  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -51,6 +54,9 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "supplementaries": {
+    "hat_stand": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -58,13 +64,6 @@
     "coordinates": false,
     "registry_name": "OFF",
     "mod_name": true
-  },
-  "alekiships": {
-    "furnace": true,
-    "jukebox": true,
-    "brewing_stand": true,
-    "block": true,
-    "note_block": true
   },
   "waystones": {
     "waystone": true

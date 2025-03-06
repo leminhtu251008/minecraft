@@ -7,7 +7,7 @@
         "armortoughnessset": 20,
         "potion": [
             "minecraft:resistance,-1,3",
-            "minecraft:regeneration,-1,31",
+            "minecraft:regeneration,-1,10",
             "minecraft:glowing,-1,1"
         ]
     },
@@ -19,7 +19,7 @@
         "armortoughnessset": 20,
         "potion": [
             "minecraft:resistance,-1,3",
-            "minecraft:regeneration,-1,31",
+            "minecraft:regeneration,-1,5",
             "minecraft:glowing,-1,1"
         ]
     },
@@ -31,7 +31,7 @@
         "armortoughnessset": 20,
         "potion": [
             "minecraft:resistance,-1,3",
-            "minecraft:regeneration,-1,31",
+            "minecraft:regeneration,-1,5",
             "minecraft:glowing,-1,1"
         ]
     },
@@ -43,7 +43,7 @@
         "armortoughnessset": 20,
         "potion": [
             "minecraft:resistance,-1,3",
-            "minecraft:regeneration,-1,31",
+            "minecraft:regeneration,-1,5",
             "minecraft:glowing,-1,1"
         ]
     },
@@ -55,7 +55,7 @@
         "armortoughnessset": 20,
         "potion": [
             "minecraft:resistance,-1,3",
-            "minecraft:regeneration,-1,31",
+            "minecraft:regeneration,-1,5",
             "minecraft:glowing,-1,1"
         ]
     },
@@ -67,7 +67,7 @@
         "armortoughnessset": 20,
         "potion": [
             "minecraft:resistance,-1,3",
-            "minecraft:regeneration,-1,31",
+            "minecraft:regeneration,-1,10",
             "minecraft:glowing,-1,1"
         ]
     },
@@ -79,7 +79,7 @@
         "armortoughnessset": 20,
         "potion": [
             "minecraft:resistance,-1,3",
-            "minecraft:regeneration,-1,31",
+            "minecraft:regeneration,-1,10",
             "minecraft:glowing,-1,1"
         ]
     },
@@ -91,7 +91,7 @@
         "armortoughnessset": 20,
         "potion": [
             "minecraft:resistance,-1,3",
-            "minecraft:regeneration,-1,31",
+            "minecraft:regeneration,-1,20",
             "minecraft:glowing,-1,1"
         ]
     },
@@ -459,6 +459,7 @@
         "mob": "slu:boss_malenia_2",
         "when": "onjoin",
         "result": "allow",
+        "healthset": 10,
         "potion": "minecraft:glowing,-1,1"
     },
     {
@@ -585,7 +586,7 @@
         "mob": "slu:boss_minecraft_lord",
         "when": "onjoin",
         "result": "allow",
-        "healthset": 100,
+        "healthset": 10,
         "potion": "minecraft:glowing,-1,1"
     },
     {
@@ -708,6 +709,16 @@
         "result": "allow",
         "healthset": 5000,
         "damageset": 80,
+        "potion": [
+            "minecraft:glowing,-1,1"
+        ]
+    },
+    {
+        "mob": "blue_skies:artificial_golem",
+        "when": "onjoin",
+        "result": "allow",
+        "healthset": 100,
+        "damageset": 50,
         "potion": [
             "minecraft:glowing,-1,1"
         ]
