@@ -9,11 +9,6 @@
 #include <mmsystem.h>
 #include <shellapi.h>
 
-#pragma comment(lib, "comctl32.lib")
-#pragma comment(lib, "shlwapi.lib")
-#pragma comment(lib, "wininet.lib")
-#pragma comment(lib, "winmm.lib")
-
 #include "resource.h"
 
 #define GIT_HUB_API_URL "https://api.github.com/repos/leminhtu251008/minecraft/releases/latest"
@@ -48,7 +43,7 @@ const char* old_folders_and_files[] = {
     "config/",
     "kubejs/",
     "mods/",
-    "resources/",
+    "resourcepacks/",
     "shaderpacks/",
     "options.txt"
 };
@@ -121,15 +116,16 @@ BOOL ExtractZipFile(const char* zipFilePath,
     PROCESS_INFORMATION pi = {0};
 
     snprintf(command, MAX_PATH,
-            "powershell -command \"Expand-Archive -Path \
-            '%s' -DestinationPath '%s' -Force\"",
-            zipFilePath,
-            extractToDirectory);
-    snprintf(fullCommand, sizeof(fullCommand),
-            "%s > %s 2>&1",
-            command, tempOutputFile);
+             "powershell -command \"Expand-Archive -Path '%s' \
+             -DestinationPath '%s' -Force\"",
+             zipFilePath,
+             extractToDirectory);
 
     GetTempFileName(".", "out", 0, tempOutputFile);
+
+    snprintf(fullCommand, sizeof(fullCommand),
+             "cmd /c \"%s > %s 2>&1\"",
+             command, tempOutputFile);
 
     si.cb = sizeof(STARTUPINFO);
     si.dwFlags |= STARTF_USESHOWWINDOW;
@@ -167,7 +163,6 @@ void DeleteDirectory(const char* dirPath)
     HANDLE hFind = INVALID_HANDLE_VALUE;
     char dirSpec[MAX_PATH] = {0};
     char filePath[MAX_PATH] = {0};
-    DWORD dwError = 0;
 
     strncpy(dirSpec, dirPath, MAX_PATH);
     strncat(dirSpec, "\\*", MAX_PATH - strlen(dirSpec) - 1);
@@ -439,7 +434,7 @@ DWORD WINAPI DownloadThreadProc(LPVOID lpParam)
                 snprintf(
                     progressText,
                     sizeof(progressText),
-                    "Đang Tải: %d B",
+                    "Đang Tải: %lu B",
                     totalBytesRead
                 );
             }
@@ -564,7 +559,6 @@ void HandleToggleMusicButton(HWND hWnd)
 {
     HRSRC hRes = NULL;
     HGLOBAL hResData = NULL;
-    DWORD resSize = 0;
 
     void* pResData = NULL;
 
@@ -583,7 +577,6 @@ void HandleToggleMusicButton(HWND hWnd)
             hResData = LoadResource(NULL, hRes);
             if (hResData)
             {
-                resSize = SizeofResource(NULL, hRes);
                 pResData = LockResource(hResData);
                 if (pResData)
                 {
@@ -638,14 +631,10 @@ LRESULT CALLBACK WindowProcedure(HWND hWnd,
     case WM_SIZE:
     {
         RECT rect = {0};
-        int width = 0;
-        int height = 0;
         HWND hUpdateButton = GetDlgItem(hWnd, IDC_UPDATE_BUTTON);
         HWND hToggleMusicButton = GetDlgItem(hWnd, IDC_TOGGLE_MUSIC_BUTTON);
 
         GetClientRect(hWnd, &rect);
-        width = rect.right;
-        height = rect.bottom;
 
         SetWindowPos(hUpdateButton, NULL, 20, 60, 100, 30, SWP_NOZORDER);
         SetWindowPos(hToggleMusicButton, NULL, 20, 100, 100, 30, SWP_NOZORDER);
@@ -857,7 +846,6 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR args, int ncmdsho
     HWND hTextBox = NULL;
     HRSRC hRes = NULL;
     HGLOBAL hResData = NULL;
-    DWORD resSize = 0;
 
     void *pResData = NULL;
     MSG msg = {0};
@@ -922,7 +910,6 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR args, int ncmdsho
         hResData = LoadResource(NULL, hRes);
         if (hResData)
         {
-            resSize = SizeofResource(NULL, hRes);
             pResData = LockResource(hResData);
             if (pResData)
             {
