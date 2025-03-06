@@ -18,3 +18,21 @@ Run the `autobuild.ps1` script with the `build` mode and output file name. Below
 ```
 
 This mode performs a complete build, including downloading dependencies, compiling the code, and packaging the final product.
+
+### Building the Installer GUI
+
+To build the Installer GUI, follow these steps:
+
+#### Prerequisites
+
+- [MinGW](http://www.mingw.org/) installed and `mingw32-make` accessible in your system's PATH
+
+#### Usage
+
+Navigate to the `installer_gui` directory and run the following commands:
+
+```powershell
+mingw32-make
+```
+
+This will install the necessary dependencies and build the Installer GUI.
