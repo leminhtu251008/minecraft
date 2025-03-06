@@ -1,0 +1,190 @@
+
+[origins]
+
+	[origins."origins:arachnid"]
+		"origins:carnivore" = true
+		"origins:fragile" = true
+		"origins:arthropod" = true
+		"origins:master_of_webs" = true
+		enabled = true
+		"origins:climbing" = true
+
+	[origins."tda:sorceress"]
+		"tda:fire_mastery/firebolt" = true
+		"tda:passives/positives/waterbender" = true
+		"tda:passives/negatives/fragile" = true
+		"tda:fire_mastery/devouring_blaze" = true
+		"tda:lightning_mastery/lightning_particles" = true
+		"tda:passives/negatives/arrogance" = true
+		"tda:starting/sorceress" = true
+		"tda:passives/positives/pyromaniac" = true
+		"tda:fire_mastery/fire_toogle" = true
+		enabled = true
+		"tda:lightning_mastery/teleport" = true
+		"tda:lightning_mastery/lightning_toggle" = true
+		"tda:fire_mastery/fireball" = true
+		"tda:passives/positives/sophistication" = true
+		"tda:passives/positives/alchemist" = true
+		"tda:passives/negatives/petite" = true
+		"tda:fire_mastery/fire_particles" = true
+		"tda:lightning_mastery/static_field" = true
+		"tda:lightning_mastery/lightning_strike" = true
+		"tda:lightning_mastery/lightning_damage" = true
+		"tda:passives/positives/frozen_armor" = true
+		"tda:passives/negatives/toxic_corruption" = true
+		"tda:passives/negatives/catalysis" = true
+
+	[origins."origins:enderian"]
+		"origins:water_vulnerability" = true
+		"origins:throw_ender_pearl" = true
+		"origins:pumpkin_hate" = true
+		"origins:ender_particles" = true
+		"origins:damage_from_potions" = true
+		enabled = true
+		"origins:extra_reach" = true
+
+	[origins."origins:feline"]
+		"origins:cat_vision" = true
+		"origins:velvet_paws" = true
+		"origins:fall_immunity" = true
+		"origins:weak_arms" = true
+		"origins:nine_lives" = true
+		enabled = true
+		"origins:sprint_jump" = true
+		"origins:scare_creepers" = true
+
+	[origins."tda:barbarian"]
+		"tda:passives/negatives/bad_reputation" = true
+		"tda:passives/negatives/clumsy" = true
+		"tda:passives/positives/offhand_stone" = true
+		"tda:passives/negatives/uneducated" = true
+		"tda:secondary_skill/war_cry" = true
+		"tda:primary_skill/rampage" = true
+		enabled = true
+		"tda:passives/positives/berserker" = true
+		"tda:passives/positives/offhand_iron" = true
+		"tda:passives/positives/unstoppable" = true
+		"tda:passives/positives/offhand_diamond" = true
+		"tda:passives/positives/frenzy" = true
+		"tda:passives/negatives/unsophisticated" = true
+		"tda:passives/positives/offhand_netherit" = true
+		"tda:passives/positives/bloodlust" = true
+		"tda:passives/negatives/cravings" = true
+		"tda:starting/barbarian" = true
+		"tda:passives/positives/offhand_wood_and_gold" = true
+		"tda:passives/positives/thick_skin" = true
+
+	[origins."origins:human"]
+		enabled = true
+
+	[origins."origins:shulk"]
+		"origins:strong_arms" = true
+		"origins:no_shield" = true
+		"origins:more_exhaustion" = true
+		"origins:strong_arms_break_speed" = true
+		"origins:natural_armor" = true
+		enabled = true
+		"origins:shulker_inventory" = true
+
+	[origins."origins:merling"]
+		"origins:air_from_potions" = true
+		"origins:swim_speed" = true
+		"origins:water_vision" = true
+		"origins:like_water" = true
+		"origins:aqua_affinity" = true
+		"origins:water_breathing" = true
+		"origins:conduit_power_on_land" = true
+		enabled = true
+		"origins:aquatic" = true
+
+	[origins."tda:rogue"]
+		"tda:passives/positives/ambush" = true
+		"tda:passives/positives/shadow_walker" = true
+		"tda:passives/negatives/exposure" = true
+		"tda:passives/positives/headhunter" = true
+		"tda:passives/positives/dexterity" = true
+		"tda:passives/positives/sw_particls" = true
+		enabled = true
+		"tda:secondary_skill/stealth" = true
+		"tda:passives/positives/athletic" = true
+		"tda:starting/rogue" = true
+		"tda:passives/negatives/weakness" = true
+		"tda:passives/negatives/mobility_needs" = true
+		"tda:primary_skill/rapid_fire" = true
+		"tda:passives/negatives/hazeshift" = true
+		"tda:passives/negatives/defenseless" = true
+
+	[origins."tda:paladin"]
+		"tda:passives/negatives/zealot" = true
+		"tda:passives/negatives/devout" = true
+		"tda:secondary_skill/salvation" = true
+		"tda:starting/paladin" = true
+		"tda:passives/negatives/modest" = true
+		enabled = true
+		"tda:primary_skill/prayer" = true
+		"tda:passives/positives/iron_skin" = true
+		"tda:passives/positives/saint" = true
+		"tda:passives/positives/holy_shield" = true
+		"tda:passives/positives/divine_force" = true
+		"tda:passives/negatives/heaven-bound" = true
+		"tda:passives/negatives/heretic" = true
+		"tda:passives/positives/transcendence" = true
+
+	[origins."origins:phantom"]
+		"origins:phasing" = true
+		"origins:fragile" = true
+		"origins:phantomize" = true
+		"origins:translucent" = true
+		"origins:invisibility" = true
+		"origins:hunger_over_time" = true
+		enabled = true
+		"origins:burn_in_daylight" = true
+		"origins:phantomize_overlay" = true
+
+	[origins."origins:blazeborn"]
+		"origins:water_vulnerability" = true
+		"origins:flame_particles" = true
+		"origins:burning_wrath" = true
+		"origins:hotblooded" = true
+		"origins:fire_immunity" = true
+		"origins:damage_from_snowballs" = true
+		"origins:nether_spawn" = true
+		"origins:damage_from_potions" = true
+		enabled = true
+
+	[origins."origins:elytrian"]
+		"origins:more_kinetic_damage" = true
+		"origins:elytra" = true
+		"origins:claustrophobia" = true
+		"origins:aerial_combatant" = true
+		"origins:light_armor" = true
+		"origins:launch_into_air" = true
+		enabled = true
+
+	[origins."tda:druid"]
+		"tda:starting/druid" = true
+		"tda:passives/positives/symbiosis" = true
+		"tda:passives/positives/wild" = true
+		"tda:secondary_skill/despawn_cooldown" = true
+		"tda:passives/negatives/nature-bound" = true
+		"tda:passives/negatives/conservative" = true
+		"tda:secondary_skill/despawn_function" = true
+		"tda:passives/positives/envenom" = true
+		"tda:passives/negatives/uncultivated" = true
+		enabled = true
+		"tda:secondary_skill/call_of_the_wild" = true
+		"tda:passives/negatives/paranoid" = true
+		"tda:passives/positives/survivalist" = true
+		"tda:passives/positives/mithridatism" = true
+		"tda:primary_skill/earthquake" = true
+		"tda:passives/negatives/fire_weakness" = true
+
+	[origins."origins:avian"]
+		"origins:fresh_air" = true
+		"origins:vegetarian" = true
+		"origins:lay_eggs" = true
+		"origins:slow_falling" = true
+		"origins:tailwind" = true
+		"origins:like_air" = true
+		enabled = true
+
