@@ -1,108 +1,94 @@
-param (
-    [string]$mode,
-    [string]$output,
-    [string[]]$files
+param ([string]$output)
+
+$copied_folders = @(
+    "config",
+    "kubejs/assets",
+    "kubejs/client_scripts",
+    "kubejs/server_scripts",
+    "kubejs/startup_scripts",
+    "mods",
+    "resourcepacks",
+    "shaderpacks"
 )
 
-$ignored_folders_and_files = @(".git", "build", "README.md", ".gitignore", ".gitattributes", "autobuild.ps1", "installer_gui", ".vscode")
+$copied_files = @("options.txt")
+
+$sourceDir = Get-Location
+$buildDir = Join-Path -Path $sourceDir -ChildPath "build/build-output"
+$outputDir = Join-Path -Path $sourceDir -ChildPath "build/output"
+$outputZipPath = Join-Path -Path $outputDir -ChildPath $output
 
 function Copy-Source {
-    param (
-        [string[]]$folders_and_files,
-        [string]$destination
-    )
-
-    if ($folders_and_files.Length -eq 0) {
-        $items = Get-ChildItem -Path (Get-Location) -Depth 0 | Where-Object { $ignored_folders_and_files -notcontains $_.Name }
-    } else {
-        $items = $folders_and_files
-
+    if (-Not (Test-Path $buildDir)) { 
+        New-Item -ItemType Directory -Path $buildDir -Force
     }
 
-    foreach ($item in $items) {
-        $destinationPath = Join-Path -Path $destination -ChildPath $item
-        $destinationPath = Split-Path -Path $destinationPath -Parent
-        if (-Not (Test-Path $destinationPath)) {
-            New-Item -ItemType Directory -Path $destinationPath -Force
-        }
+    # Remove all files and folders in the destination directory
+    Get-ChildItem -Path $buildDir -Recurse | Remove-Item -Force -Recurse
+    Start-Sleep -s 5
 
-        if (Test-Path $item -PathType Container) {
-            Copy-Item -Path $item -Destination $destinationPath -Recurse -Force
-        } elseif (Test-Path $item -PathType Leaf) {
-            Copy-Item -Path $item -Destination $destinationPath -Force
+    foreach ($folder in $copied_folders) {
+        $sourceFolder = Join-Path -Path $sourceDir -ChildPath $folder
+        if ($folder -match "/") {
+            $destinationFolder = Join-Path -Path $buildDir -ChildPath $folder.Split("/")[0]
         } else {
-            Write-Error "Item $item does not exist."
-            exit 1
+            $destinationFolder = $buildDir
         }
+
+        if (-Not (Test-Path $destinationFolder)) {
+            New-Item -ItemType Directory -Path $destinationFolder -Force
+        }
+        Copy-Item -Path $sourceFolder -Destination $destinationFolder -Recurse -Force
     }
-}
 
-function Get-ChangedFiles {
-    $lastTag = git describe --tags --abbrev=0
-    if (!$lastTag) {
-        Write-Error "No tags found."
-        exit 1
+    foreach ($file in $copied_files) {
+        $sourceFile = Join-Path -Path $sourceDir -ChildPath $file
+        $destinationFile = Join-Path -Path $buildDir -ChildPath $file
+        Copy-Item -Path $sourceFile -Destination $destinationFile -Force
     }
-    $changedFiles = git diff --name-only $lastTag HEAD
-    $filteredFiles = $changedFiles | Where-Object { $ignored_folders_and_files -notcontains $_ }
-    return $filteredFiles
+
+    Start-Sleep -s 5
 }
 
-$buildOutputDir = Join-Path -Path (Get-Location) -ChildPath "build/build-output"
-if (-Not (Test-Path $buildOutputDir)) {
-    New-Item -ItemType Directory -Path $buildOutputDir -Force
-}
+Copy-Source
 
-Remove-Item -Path $buildOutputDir\* -Recurse -Force
-
-Start-Sleep -s 2
-
-$additionalFilesDirectory = "."
-
-if ($mode -eq "full") {
-    $folders = Get-ChildItem -Directory | ForEach-Object { $_.Name }
-    $folders = $folders | Where-Object { $ignored_folders_and_files -notcontains $_ }
-    $additionalFiles = Get-ChildItem -Path $additionalFilesDirectory | ForEach-Object { $_.Name }
-    $additionalFiles = $additionalFiles | Where-Object { $ignored_folders_and_files -notcontains $_ }
-    $folders += $additionalFiles # Include all files from the additional directory
-    Copy-Source -folders_and_files $folders -destination $buildOutputDir
-} elseif ($mode -eq "update") {
-    $changedFiles = Get-ChangedFiles
-    $additionalFiles = Get-ChildItem -Path $additionalFilesDirectory | ForEach-Object { $_.FullName }
-    $changedFiles += $additionalFiles # Include all files from the additional directory
-    Copy-Source -folders_and_files $changedFiles -destination $buildOutputDir
-} elseif ($mode -eq "test") {
-    $additionalFiles = Get-ChildItem -Path $additionalFilesDirectory | ForEach-Object { $_.FullName }
-    $files += $additionalFiles # Include all files from the additional directory
-    Copy-Source -folders_and_files $files -destination $buildOutputDir
-} else {
-    Write-Error "Invalid mode specified. Use 'full', 'update', or 'test'."
-    exit 1
-}
-
-Start-Sleep -s 2
-
-$outputDir = Join-Path -Path (Get-Location) -ChildPath "build/output"
 if (-Not (Test-Path $outputDir)) {
     New-Item -ItemType Directory -Path $outputDir -Force
 }
 
-$outputZipPath = Join-Path -Path $outputDir -ChildPath $output
 if (Test-Path $outputZipPath) {
     Remove-Item -Path $outputZipPath -Force
 }
 
-$winRARPath = "C:\Program Files\WinRAR\WinRAR.exe"
-$outputZipPath = Join-Path -Path $outputDir -ChildPath $output
-$repoLocation = Get-Location
-$arguments = @(
-    "a",            
-    "-ep1",         
-    "-r",           
-    $outputZipPath, 
-    "*"             
-)
+# Use Windows built-in zip
+function Start-Compress {
+    param (
+        [string]$sourceDir,
+        [string]$destinationZip
+    )
 
-Set-Location -Path $buildOutputDir
-Start-Process -FilePath $winRARPath -ArgumentList $arguments -Wait
+    # Use Windows built-in zip
+    $shell = New-Object -ComObject Shell.Application
+    $zip = $shell.NameSpace($destinationZip)
+    if (-Not $zip) {
+        # Create the zip file if it does not exist
+        New-Item -ItemType File -Path $destinationZip
+        $zip = $shell.NameSpace($destinationZip)
+    }
+    $folder = $shell.NameSpace($sourceDir)
+
+    Write-Host "Compressing $sourceDir to $destinationZip..."
+    $zip.CopyHere($folder.Items(), 16)
+    # Wait for the zip to finish, check every 0.1 seconds
+    while ($zip.Items().Count -ne $folder.Items().Count) {
+        Start-Sleep -Milliseconds 100
+    }
+
+    Write-Host "Compressed $sourceDir to $destinationZip."
+    return
+}
+
+$repoLocation = Get-Location
+Set-Location -Path $buildDir
+Start-Compress -sourceDir $buildDir -destinationZip $outputZipPath
 Set-Location -Path $repoLocation
