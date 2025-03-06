@@ -4,6 +4,7 @@
   "alekiships:furnace": null,
   "alekiships:jukebox": null,
   "alekiships:note_block": null,
+  "framedblocks:framed_item_frame": null,
   "gravestone:grave": null,
   "jade:block_face": null,
   "jade:distance": null,
@@ -51,5 +52,8 @@
   "minecraft:villager_profession": null,
   "minecraft:waxed": null,
   "minecraft:zombie_villager": null,
+  "supplementaries:hat_stand": null,
+  "supplementaries:present": null,
+  "supplementaries:safe": null,
   "waystones:waystone": null
 }

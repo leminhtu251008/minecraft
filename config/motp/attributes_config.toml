@@ -41,7 +41,7 @@
 
 ["Attribute 6"]
 	display_name = "Armor Toughness : "
-	cmd_to_exc = ["/attribute @p generic.luck base set [param(0.2)]"]
+	cmd_to_exc = ["/attribute @p generic.armor_toughness base set [param(0.2)]"]
 	tip_to_display = "§7Increase the amount of damage needed to penentrate your armor"
 	max_level = 50.0
 	base_value_per_point = 1.0

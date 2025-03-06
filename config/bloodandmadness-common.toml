@@ -2,12 +2,12 @@
 [bloodandmadness]
 	#Configs:
 	#Will entities spawn blood particles when damaged?
-	spawn_blood_particles = true
+	spawn_blood_particles = false
 	#Apply Dawncraft patch
 	apply_dawncraft_patch = false
 	#How much will weapon damage scale for each level
 	#Range: 0.0 ~ 255.0
-	upgrade_level_scaling = 0.2
+	upgrade_level_scaling = 0.5
 	#max durability of Blood And Madness weapons
 	#Range: 0 ~ 1048576
 	weapon_duraility = 4096
@@ -44,10 +44,10 @@
 	should_ashen_beast_patients_spawn = true
 	#Father Gascoigne HP (total)
 	#Range: 1.0 ~ 1048576.0
-	father_gascoigne_hp = 8000.0
+	father_gascoigne_hp = 50000.0
 	#Micolash HP
 	#Range: 1.0 ~ 1048576.0
-	micolash_hp = 7000.0
+	micolash_hp = 50000.0
 	#Skeletal Puppet HP
 	#Range: 1.0 ~ 1048576.0
 	puppet_hp = 120.0

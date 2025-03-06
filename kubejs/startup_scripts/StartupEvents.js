@@ -82,4 +82,200 @@ StartupEvents.registry('item', event => {
         .displayName('§cSpider Artifact')
         .maxStackSize(16)
         .glow(true)
+
+    event
+        .create('gimlet_blessing_tier_1', "basic")
+        .tooltip("Drop from boss. Increase Armor Penetration [50-60]")
+        .displayName('§cGimlet Blessing Tier 1')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('gimlet_blessing_tier_2', "basic")
+        .tooltip("Drop from boss. Increase Armor Penetration [60-70]")
+        .displayName('§cGimlet Blessing Tier 2')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('gimlet_blessing_tier_3', "basic")
+        .tooltip("Drop from boss. Increase Armor Penetration [70-75]")
+        .displayName('§cGimlet Blessing Tier 3')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('gimlet_blessing_tier_4', "basic")
+        .tooltip("Drop from boss. Increase Armor Penetration [75-80]")
+        .displayName('§cGimlet Blessing Tier 4')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('recruit_blessing_tier_1', "basic")
+        .tooltip("Drop from boss. Increase Stamina Regeneration [1-6]")
+        .displayName('§cRecruit Blessing Tier 1')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('recruit_blessing_tier_2', "basic")
+        .tooltip("Drop from boss. Increase Stamina Regeneration [6-12]")
+        .displayName('§cRecruit Blessing Tier 2')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('recruit_blessing_tier_3', "basic")
+        .tooltip("Drop from boss. Increase Stamina Regeneration [12-18]")
+        .displayName('§cRecruit Blessing Tier 3')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('recruit_blessing_tier_4', "basic")
+        .tooltip("Drop from boss. Increase Stamina Regeneration [18-20]")
+        .displayName('§cRecruit Blessing Tier 4')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('health_blessing_tier_1', "basic")
+        .tooltip("Drop from boss. Increase Max Health [60-80]")
+        .displayName('§cHealth Blessing Tier 1')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('health_blessing_tier_2', "basic")
+        .tooltip("Drop from boss. Increase Max Health [80-90]")
+        .displayName('§cHealth Blessing Tier 2')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('health_blessing_tier_3', "basic")
+        .tooltip("Drop from boss. Increase Max Health [90-95]")
+        .displayName('§cHealth Blessing Tier 3')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('health_blessing_tier_4', "basic")
+        .tooltip("Drop from boss. Increase Max Health [95-100]")
+        .displayName('§cHealth Blessing Tier 4')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('strength_blessing_tier_1', "basic")
+        .tooltip("Drop from boss. Increase Attack Damage [10-15]")
+        .displayName('§cStrength Blessing Tier 1')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('strength_blessing_tier_2', "basic")
+        .tooltip("Drop from boss. Increase Attack Damage [15-18]")
+        .displayName('§cStrength Blessing Tier 2')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('strength_blessing_tier_3', "basic")
+        .tooltip("Drop from boss. Increase Attack Damage [18-19]")
+        .displayName('§cStrength Blessing Tier 3')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('strength_blessing_tier_4', "basic")
+        .tooltip("Drop from boss. Increase Attack Damage [19-20]")
+        .displayName('§cStrength Blessing Tier 4')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('speed_blessing_tier_1', "basic")
+        .tooltip("Drop from boss. Increase Attack Speed [4.6-4.8]")
+        .displayName('§cSpeed Blessing Tier 1')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('speed_blessing_tier_2', "basic")
+        .tooltip("Drop from boss. Increase Attack Speed [4.8-5.0]")
+        .displayName('§cSpeed Blessing Tier 2')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('speed_blessing_tier_3', "basic")
+        .tooltip("Drop from boss. Increase Attack Speed [5.0-5.1]")
+        .displayName('§cSpeed Blessing Tier 3')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('speed_blessing_tier_4', "basic")
+        .tooltip("Drop from boss. Increase Attack Speed [5.1-5.2]")
+        .displayName('§cSpeed Blessing Tier 4')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('defense_blessing_tier_1', "basic")
+        .tooltip("Drop from boss. Increase Armor [10-15]")
+        .displayName('§cDefense Blessing Tier 1')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('defense_blessing_tier_2', "basic")
+        .tooltip("Drop from boss. Increase Armor [15-18]")
+        .displayName('§cDefense Blessing Tier 2')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('defense_blessing_tier_3', "basic")
+        .tooltip("Drop from boss. Increase Armor [18-19]")
+        .displayName('§cDefense Blessing Tier 3')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('defense_blessing_tier_4', "basic")
+        .tooltip("Drop from boss. Increase Armor [19-20]")
+        .displayName('§cDefense Blessing Tier 4')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('enduring_blessing_tier_1', "basic")
+        .tooltip("Drop from boss. Increase Staminar [44-50]")
+        .displayName('§cEnduring Blessing Tier 1')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('enduring_blessing_tier_2', "basic")
+        .tooltip("Drop from boss. Increase Staminar [50-55]")
+        .displayName('§cEnduring Blessing Tier 2')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('enduring_blessing_tier_3', "basic")
+        .tooltip("Drop from boss. Increase Staminar [55-68]")
+        .displayName('§cEnduring Blessing Tier 3')
+        .maxStackSize(1)
+        .glow(true)
+
+    event
+        .create('enduring_blessing_tier_4', "basic")
+        .tooltip("Drop from boss. Increase Staminar [58-60]")
+        .displayName('§cEnduring Blessing Tier 4')
+        .maxStackSize(1)
+        .glow(true)
 })

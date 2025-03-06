@@ -1,5 +1,4 @@
 LootJS.modifiers(lootModifierEvent => {
-
     lootModifierEvent
         .addEntityLootModifier("cataclysm:ender_guardian")
         .removeLoot("cataclysm:gauntlet_of_guard")
@@ -11,7 +10,28 @@ LootJS.modifiers(lootModifierEvent => {
                 .when((c) => c.randomChance(0.2)),
             LootEntry
                 .of("cataclysm:void_core", 5)        
-                .when((c) => c.randomChance(0.2))
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:health_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5))
         )
 
     lootModifierEvent
@@ -26,7 +46,28 @@ LootJS.modifiers(lootModifierEvent => {
                 .when((c) => c.randomChance(0.2)),
             LootEntry
                 .of("cataclysm:monstrous_horn", 5)
-                .when((c) => c.randomChance(0.2))
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:health_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5))
         )
 
     lootModifierEvent
@@ -37,7 +78,28 @@ LootJS.modifiers(lootModifierEvent => {
         .addLoot(
             LootEntry
                 .of("cataclysm:ignitium_ingot", 20)        
-                .when((c) => c.randomChance(0.2))
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:health_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5))
         )
 
     lootModifierEvent
@@ -48,7 +110,28 @@ LootJS.modifiers(lootModifierEvent => {
         .addLoot(
             LootEntry
                 .of("cataclysm:witherite_ingot", 20)        
-                .when((c) => c.randomChance(0.2))
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:health_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5))
         )
 
     lootModifierEvent
@@ -64,7 +147,28 @@ LootJS.modifiers(lootModifierEvent => {
             LootEntry.of("minecraft:crystallized_coral", 5),
             LootEntry.of("minecraft:coral_chunk", 5),
             LootEntry.of("minecraft:amethys_crab_shell", 5),
-            LootEntry.of("minecraft:lionfish", 5)
+            LootEntry.of("minecraft:lionfish", 5),
+            LootEntry
+                .of("kubejs:health_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5))
         )
 
     lootModifierEvent
@@ -81,7 +185,28 @@ LootJS.modifiers(lootModifierEvent => {
                 .of("cataclysm:ancient_metal_ingot", 5)        
                 .when((c) => c.randomChance(0.2)),
             LootEntry.of("minecraft:kobolediator_skull", 5),
-            LootEntry.of("minecraft:koboleton_bone", 10)
+            LootEntry.of("minecraft:koboleton_bone", 10),
+            LootEntry
+                .of("kubejs:health_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5))
         )
 
     lootModifierEvent
@@ -98,7 +223,28 @@ LootJS.modifiers(lootModifierEvent => {
                 .of("cataclysm:ancient_metal_ingot", 10)        
                 .when((c) => c.randomChance(0.2)),
             LootEntry.of("minecraft:kobolediator_skull", 5),
-            LootEntry.of("minecraft:koboleton_bone", 10)
+            LootEntry.of("minecraft:koboleton_bone", 10),
+            LootEntry
+                .of("kubejs:health_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5))
 
         )
 
@@ -126,7 +272,28 @@ LootJS.modifiers(lootModifierEvent => {
                 .when((c) => c.randomChance(0.2)),
             LootEntry
                 .of("cataclysm:black_steel_ingot", 10)        
-                .when((c) => c.randomChance(0.2))
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:health_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5))
         )
 
     lootModifierEvent
@@ -161,7 +328,14 @@ LootJS.modifiers(lootModifierEvent => {
         .addLoot(
             LootEntry
                 .of("kubejs:bone_soul", 5)        
-                .when((c) => c.randomChance(0.2))
+                .when((c) => c.randomChance(0.2)),
+            LootEntry.of("kubejs:health_blessing_tier_4", 5),
+            LootEntry.of("kubejs:strength_blessing_tier_4", 5),
+            LootEntry.of("kubejs:speed_blessing_tier_4", 5),
+            LootEntry.of("kubejs:defense_blessing_tier_4", 5),
+            LootEntry.of("kubejs:enduring_blessing_tier_4", 5),
+            LootEntry.of("kubejs:recruit_blessing_tier_4", 5),
+            LootEntry.of("kubejs:gimlet_blessing_tier_4", 5)
         )
 
     lootModifierEvent
@@ -177,7 +351,28 @@ LootJS.modifiers(lootModifierEvent => {
         .addLoot(
             LootEntry
                 .of("aerialhell:mud_cycle_mage_trophy", 5)        
-                .when((c) => c.randomChance(0.2))
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:health_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2))            
         )
 
     lootModifierEvent
@@ -193,7 +388,28 @@ LootJS.modifiers(lootModifierEvent => {
         .addLoot(
             LootEntry
                 .of("aerialhell:lunar_priest_trophy", 5)        
-                .when((c) => c.randomChance(0.2))
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:health_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2))  
         )
 
     lootModifierEvent
@@ -209,7 +425,28 @@ LootJS.modifiers(lootModifierEvent => {
         .addLoot(
             LootEntry
                 .of("aerialhell:chained_god_trophy", 5)        
-                .when((c) => c.randomChance(0.2))
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:health_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2))  
         )
 
     lootModifierEvent
@@ -225,7 +462,28 @@ LootJS.modifiers(lootModifierEvent => {
         .addLoot(
             LootEntry
                 .of("aerialhell:lilith_trophy", 5)        
-                .when((c) => c.randomChance(0.2))
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:health_blessing_tier_2", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_2", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_2", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_2", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_2", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_2", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_2", 5)
+                .when((c) => c.randomChance(0.2))  
         )
 
     lootModifierEvent
@@ -241,7 +499,28 @@ LootJS.modifiers(lootModifierEvent => {
         .addLoot(
             LootEntry
                 .of("kubejs:summoner_champion", 5)        
-                .when((c) => c.randomChance(0.2))
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:health_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2))  
         )
 
     lootModifierEvent
@@ -256,7 +535,28 @@ LootJS.modifiers(lootModifierEvent => {
         .addLoot(
             LootEntry
                 .of("kubejs:alchemist_bottle", 5)        
-                .when((c) => c.randomChance(0.2))
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:health_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2))  
         )
 
     lootModifierEvent
@@ -271,7 +571,28 @@ LootJS.modifiers(lootModifierEvent => {
         .addLoot(
             LootEntry
                 .of("kubejs:stellaris", 5)        
-                .when((c) => c.randomChance(0.2))
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:health_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_1", 5)
+                .when((c) => c.randomChance(0.2))  
         )
 
     lootModifierEvent
@@ -286,7 +607,28 @@ LootJS.modifiers(lootModifierEvent => {
         .addLoot(
             LootEntry
                 .of("kubejs:spider_artifact", 5)        
-                .when((c) => c.randomChance(0.2))
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:health_blessing_tier_2", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_2", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_2", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_2", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_2", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_2", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_2", 5)
+                .when((c) => c.randomChance(0.2))  
         )
 
     lootModifierEvent
@@ -305,22 +647,113 @@ LootJS.modifiers(lootModifierEvent => {
         .addEntityLootModifier("slu:boss_soul_of_cinder")
         .removeLoot("slu:soul_of_cinder_soul")
         .killedByPlayer()
-        .addLoot(LootEntry.of("minecraft:wither_skeleton_skull", 3))
+        .addLoot(
+            LootEntry.of("minecraft:wither_skeleton_skull", 3),
+            LootEntry
+                .of("kubejs:health_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5))
+        )
 
     lootModifierEvent
         .addEntityLootModifier("slu:boss_radagon")
         .killedByPlayer()
-        .addLoot(LootEntry.of("minecraft:wither_skeleton_skull", 3))
+        .addLoot(
+            LootEntry.of("minecraft:wither_skeleton_skull", 3),
+            LootEntry
+                .of("kubejs:health_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5))
+            )
 
     lootModifierEvent
         .addEntityLootModifier("slu:boss_mohg")
         .killedByPlayer()
-        .addLoot(LootEntry.of("minecraft:wither_skeleton_skull", 3))
+        .addLoot(LootEntry.of("minecraft:wither_skeleton_skull", 3),
+        LootEntry
+            .of("kubejs:health_blessing_tier_3", 5)
+            .when((c) => c.randomChance(0.5)),
+        LootEntry
+            .of("kubejs:strength_blessing_tier_3", 5)
+            .when((c) => c.randomChance(0.5)),
+        LootEntry
+            .of("kubejs:speed_blessing_tier_3", 5)
+            .when((c) => c.randomChance(0.5)),
+        LootEntry
+            .of("kubejs:defense_blessing_tier_3", 5)
+            .when((c) => c.randomChance(0.5)),
+        LootEntry
+            .of("kubejs:enduring_blessing_tier_3", 5)
+            .when((c) => c.randomChance(0.5)),
+        LootEntry
+            .of("kubejs:recruit_blessing_tier_3", 5)
+            .when((c) => c.randomChance(0.5)),
+        LootEntry
+            .of("kubejs:gimlet_blessing_tier_3", 5)
+            .when((c) => c.randomChance(0.5))
+        )
 
     lootModifierEvent
         .addEntityLootModifier("slu:boss_ancient_warrior")
         .killedByPlayer()
-        .addLoot(LootEntry.of("minecraft:wither_skeleton_skull", 3))
+        .addLoot(
+            LootEntry.of("minecraft:wither_skeleton_skull", 3),
+            LootEntry
+                .of("kubejs:health_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_3", 5)
+                .when((c) => c.randomChance(0.5))
+            )
 
     lootModifierEvent
         .addEntityLootModifier("slu:boss_minecraft_lord")
@@ -621,7 +1054,28 @@ LootJS.modifiers(lootModifierEvent => {
         .addLoot(
             LootEntry
                 .of("bosses_of_mass_destruction:ancient_anima", 5)
-                .when((c) => c.randomChance(0.2))
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:health_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5))
         )
 
     lootModifierEvent
@@ -630,7 +1084,28 @@ LootJS.modifiers(lootModifierEvent => {
         .addLoot(
             LootEntry
                 .of("bosses_of_mass_destruction:void_thorn", 5)
-                .when((c) => c.randomChance(0.2))
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:health_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:strength_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:speed_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:defense_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:enduring_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:recruit_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:gimlet_blessing_tier_4", 5)
+                .when((c) => c.randomChance(0.5))
         )
 })
 
@@ -739,6 +1214,134 @@ PlayerEvents.tick(playerTickEV => {
             playerEffect.add("minecraft:regeneration", 20, 2)
         }
     }
+})
+
+function rpgSetAttribute(server, player, itemName) {
+    let playerMOTPLevel = player.getForgePersistentData().getInt("motp_level")
+    let tier = itemName.split("_")[3]
+    let attribute = ""
+    let value = 0
+
+    let mainHand = player.getEquipment("mainhand")
+    let mainHandItemName = mainHand.item.id
+
+    if (!itemName.includes("tier") || !itemName.includes("kubejs"))
+    {
+        return
+    }
+
+    if (mainHandItemName != itemName) {
+        player.tell("You need to hold the item in your main hand.")
+        return
+    }
+
+    if (playerMOTPLevel < 500) {
+        player.tell("You need to be at least level 500 to use this item.")
+        return
+    }
+
+    if (itemName.includes("kubejs:health_blessing")) {
+        attribute = "minecraft:generic.max_health"
+        if (tier == 1) {
+            value = Math.floor(Math.random() * (80 - 60 + 1)) + 60
+        } else if (tier == 2) {
+            value = Math.floor(Math.random() * (90 - 80 + 1)) + 80
+        } else if (tier == 3) {
+            value = Math.floor(Math.random() * (95 - 90 + 1)) + 90            
+        } else if (tier == 4) {
+            value = Math.floor(Math.random() * (100 - 95 + 1)) + 95
+        }
+
+        value = Math.round(value * 100) / 100
+    } else if (itemName.includes("kubejs:strength_blessing")) {
+        attribute = "minecraft:generic.attack_damage"
+        if (tier == 1) {
+            value = Math.floor(Math.random() * (15 - 10 + 1)) + 10
+        } else if (tier == 2) {
+            value = Math.floor(Math.random() * (18 - 15 + 1)) + 15
+        } else if (tier == 3) {
+            value = Math.floor(Math.random() * (19 - 18 + 1)) + 18
+        } else if (tier == 4) {
+            value = Math.floor(Math.random() * (20 - 19 + 1)) + 19
+        }
+
+        value = Math.round(value * 100) / 100
+    } else if (itemName.includes("kubejs:speed_blessing")) {
+        attribute = "minecraft:generic.attack_speed"
+        if (tier == 1) {
+            value = Math.floor(Math.random() * (48 - 46 + 1)) + 46 / 10
+        } else if (tier == 2) {
+            value = Math.floor(Math.random() * (50 - 48 + 1)) + 48 / 10
+        } else if (tier == 3) {
+            value = Math.floor(Math.random() * (51 - 50 + 1)) + 50 / 10
+        } else if (tier == 4) {
+            value = Math.floor(Math.random() * (52 - 51 + 1)) + 51 / 10
+        }
+
+        value = Math.round(value * 1000) / 1000
+    } else if (itemName.includes("kubejs:defense_blessing")) {
+        attribute = "minecraft:generic.armor"
+        if (tier == 1) {
+            value = Math.random() * (15 - 10 + 1) + 10
+        } else if (tier == 2) {
+            value = Math.random() * (18 - 15 + 1) + 15
+        } else if (tier == 3) {
+            value = Math.random() * (19 - 18 + 1) + 18
+        } else if (tier == 4) {
+            value = Math.random() * (20 - 19 + 1) + 19
+        }
+
+        value = Math.round(value * 100) / 100
+    } else if (itemName.includes("kubejs:gimlet_blessing")) {
+        attribute = "epicfight:armor_negation"
+        if (tier == 1) {
+            value = Math.random() * (60 - 50 + 1) + 50
+        } else if (tier == 2) {
+            value = Math.random() * (70 - 60 + 1) + 60
+        } else if (tier == 3) {
+            value = Math.random() * (75 - 70 + 1) + 70
+        } else if (tier == 4) {
+            value = Math.random() * (80 - 75 + 1) + 75
+        }
+
+        value = Math.round(value * 100) / 100
+    } else if (itemName.includes("kubejs:enduring_blessing")) {
+        attribute = "epicfight:staminar"
+        if (tier == 1) {
+            value = Math.random() * (50 - 44 + 1) + 44
+        } else if (tier == 2) {
+            value = Math.random() * (55 - 50 + 1) + 50
+        } else if (tier == 3) {
+            value = Math.random() * (58 - 55 + 1) + 55
+        } else if (tier == 4) {
+            value = Math.random() * (60 - 58 + 1) + 58
+        }
+
+        value = Math.round(value * 100) / 100
+    } else if (itemName.includes("kubejs:recruit_blessing")) {
+        attribute = "epicfight:stamina_regen"
+        if (tier == 1) {
+            value = Math.floor(Math.random() * (6 - 1 + 1)) + 1
+        } else if (tier == 2) {
+            value = Math.floor(Math.random() * (12 - 6 + 1)) + 6
+        } else if (tier == 3) {
+            value = Math.floor(Math.random() * (18 - 12 + 1)) + 12
+        } else if (tier == 4) {
+            value = Math.floor(Math.random() * (20 - 18 + 1)) + 18
+        }
+    }
+
+    server.runCommandSilent(`attribute ${player.name.getString()} ${attribute} base set ${value}`)
+    mainHand.setCount(0)
+}
+
+ItemEvents.rightClicked(itemRightClickedEV => {
+    let item = itemRightClickedEV.item
+    let itemName = item.item.id
+    let player = itemRightClickedEV.player
+    let server = itemRightClickedEV.server
+
+    rpgSetAttribute(server, player, itemName)
 })
 
 ServerEvents.recipes(recipesEvent => {
@@ -906,7 +1509,7 @@ ServerEvents.recipes(recipesEvent => {
         C: 'kubejs:absolute_smithing_template',
         D: 'kubejs:toxin_cloud',
         E: 'slu:grand_trial_sword',
-        F: 'kubejs:cursium_block'
+        F: 'cataclysm:cursium_block'
     })
 
     recipesEvent.shaped("cataclysm:the_annihilator", [
@@ -1105,5 +1708,173 @@ ServerEvents.recipes(recipesEvent => {
         A: 'cataclysm:meat_shredder',
         B: 'bosses_of_mass_destruction:ancient_anima',
         C: 'cataclysm:tidal_claws'
+    })
+
+    recipesEvent.shaped("kubejs:health_blessing_tier_4", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:health_blessing_tier_3'
+    })
+
+    recipesEvent.shaped("kubejs:health_blessing_tier_3", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:health_blessing_tier_2'
+    })
+
+    recipesEvent.shaped("kubejs:health_blessing_tier_2", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:health_blessing_tier_1'
+    })
+
+    recipesEvent.shaped("kubejs:defense_blessing_tier_4", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:defense_blessing_tier_3'
+    })
+
+    recipesEvent.shaped("kubejs:defense_blessing_tier_3", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:defense_blessing_tier_2'
+    })
+
+    recipesEvent.shaped("kubejs:defense_blessing_tier_2", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:defense_blessing_tier_1'
+    })
+
+    recipesEvent.shaped("kubejs:speed_blessing_tier_4", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:speed_blessing_tier_3'
+    })
+
+    recipesEvent.shaped("kubejs:speed_blessing_tier_3", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:speed_blessing_tier_2'
+    })
+
+    recipesEvent.shaped("kubejs:speed_blessing_tier_2", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:speed_blessing_tier_1'
+    })
+
+    recipesEvent.shaped("kubejs:enduring_blessing_tier_4", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:enduring_blessing_tier_3'
+    })
+
+    recipesEvent.shaped("kubejs:enduring_blessing_tier_3", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:enduring_blessing_tier_2'
+    })
+
+    recipesEvent.shaped("kubejs:enduring_blessing_tier_2", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:enduring_blessing_tier_1'
+    })
+
+    recipesEvent.shaped("kubejs:gimlet_blessing_tier_4", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:gimlet_blessing_tier_3'
+    })
+
+    recipesEvent.shaped("kubejs:gimlet_blessing_tier_3", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:gimlet_blessing_tier_2'
+    })
+
+    recipesEvent.shaped("kubejs:gimlet_blessing_tier_2", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:gimlet_blessing_tier_1'
+    })
+
+    recipesEvent.shaped("kubejs:recruit_blessing_tier_4", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:recruit_blessing_tier_3'
+    })
+
+    recipesEvent.shaped("kubejs:recruit_blessing_tier_3", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:recruit_blessing_tier_2'
+    })
+
+    recipesEvent.shaped("kubejs:recruit_blessing_tier_2", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:recruit_blessing_tier_1'
+    })
+
+    recipesEvent.shaped("kubejs:strength_blessing_tier_4", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:strength_blessing_tier_3'
+    })
+
+    recipesEvent.shaped("kubejs:strength_blessing_tier_3", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:strength_blessing_tier_2'
+    })
+
+    recipesEvent.shaped("kubejs:strength_blessing_tier_2", [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'kubejs:strength_blessing_tier_1'
     })
 })
