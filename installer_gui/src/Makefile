@@ -29,5 +29,5 @@ $(EXE): $(SRC) $(RES)
 
 # Clean target
 clean:
-	@if exist $(OBJS) del $(OBJS)
-	@if exist $(EXE) del $(EXE)
+	@if exist "$(OBJS)" cmd /c del "$(OBJS)"
+	@if exist "$(EXE)" cmd /c del "$(EXE)"
