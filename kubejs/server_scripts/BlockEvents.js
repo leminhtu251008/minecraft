@@ -1,3 +1,9 @@
+const TICKS_PER_SECONDS = 20
+const MAX_RETRIES = 1
+
+let globalServerTickCounter = 0
+let globalPlayerData = []
+
 LootJS.modifiers(lootModifierEvent => {
     lootModifierEvent
         .addEntityLootModifier("cataclysm:ender_guardian")
@@ -1142,6 +1148,7 @@ ItemEvents.crafted(ItemCraftedEV => {
 
 PlayerEvents.tick(playerTickEV => {
     let player = playerTickEV.player
+    let playerName = player.name.getString()
     let mainHand = player.getEquipment("mainhand")
     let mainHandItemName = mainHand.item.id
     let offHand = player.getEquipment("offhand")
@@ -1214,7 +1221,50 @@ PlayerEvents.tick(playerTickEV => {
             playerEffect.add("minecraft:regeneration", 20, 2)
         }
     }
+
+    let server = playerTickEV.server
+    let playerData = globalPlayerData.find(
+        element => element.name === playerName
+    )
+
+    if (playerData) {
+        if (playerData.counter < TICKS_PER_SECONDS) {
+            playerData.counter++
+        } else {
+            playerData.counter = 0
+            if (playerData.retries < MAX_RETRIES) {
+                let attributes = playerData.attributes
+
+                for (let attribute in attributes) {
+                    let value = attributes[attribute]
+                    server.runCommandSilent(
+                        `attribute ${playerName} ${attribute} base set ${value}`
+                    )
+                }
+
+                playerData.retries++
+            }
+        }
+    }
 })
+
+function updatePlayerStats(playerName, attributeName, value) {
+    let playerData = globalPlayerData.find(element => element.name === playerName)
+
+    if (!playerData) {
+        playerData = {
+            name: playerName,
+            counter: 0,
+            retries: 0,
+            attributes: {}
+        }
+
+        globalPlayerData.push(playerData)
+    }
+
+    playerData.retries = 0
+    playerData.attributes[attributeName] = value
+}
 
 function rpgSetAttribute(server, player, itemName) {
     let playerMOTPLevel = player.getForgePersistentData().getInt("motp_level")
@@ -1225,8 +1275,7 @@ function rpgSetAttribute(server, player, itemName) {
     let mainHand = player.getEquipment("mainhand")
     let mainHandItemName = mainHand.item.id
 
-    if (!itemName.includes("tier") || !itemName.includes("kubejs"))
-    {
+    if (!itemName.includes("tier") || !itemName.includes("kubejs")) {
         return
     }
 
@@ -1243,97 +1292,135 @@ function rpgSetAttribute(server, player, itemName) {
     if (itemName.includes("kubejs:health_blessing")) {
         attribute = "minecraft:generic.max_health"
         if (tier == 1) {
-            value = Math.floor(Math.random() * (80 - 60 + 1)) + 60
+            value = (Math.random() * (80 - 60)) + 60
         } else if (tier == 2) {
-            value = Math.floor(Math.random() * (90 - 80 + 1)) + 80
+            value = (Math.random() * (90 - 80)) + 80
         } else if (tier == 3) {
-            value = Math.floor(Math.random() * (95 - 90 + 1)) + 90            
+            value = (Math.random() * (95 - 90)) + 90
         } else if (tier == 4) {
-            value = Math.floor(Math.random() * (100 - 95 + 1)) + 95
+            value = (Math.random() * (100 - 95)) + 95
         }
 
-        value = Math.round(value * 100) / 100
+        value = Math.round(value * 10) / 10
     } else if (itemName.includes("kubejs:strength_blessing")) {
         attribute = "minecraft:generic.attack_damage"
         if (tier == 1) {
-            value = Math.floor(Math.random() * (15 - 10 + 1)) + 10
+            value = (Math.random() * (15 - 10)) + 10
         } else if (tier == 2) {
-            value = Math.floor(Math.random() * (18 - 15 + 1)) + 15
+            value = (Math.random() * (18 - 15)) + 15
         } else if (tier == 3) {
-            value = Math.floor(Math.random() * (19 - 18 + 1)) + 18
+            value = (Math.random() * (19 - 18)) + 18
         } else if (tier == 4) {
-            value = Math.floor(Math.random() * (20 - 19 + 1)) + 19
+            value = (Math.random() * (20 - 19)) + 19
         }
 
         value = Math.round(value * 100) / 100
     } else if (itemName.includes("kubejs:speed_blessing")) {
         attribute = "minecraft:generic.attack_speed"
         if (tier == 1) {
-            value = Math.floor(Math.random() * (48 - 46 + 1)) + 46 / 10
+            value = ((Math.random() * (48 - 46)) + 46) / 10
         } else if (tier == 2) {
-            value = Math.floor(Math.random() * (50 - 48 + 1)) + 48 / 10
+            value = ((Math.random() * (50 - 48)) + 48) / 10
         } else if (tier == 3) {
-            value = Math.floor(Math.random() * (51 - 50 + 1)) + 50 / 10
+            value = ((Math.random() * (51 - 50)) + 50) / 10
         } else if (tier == 4) {
-            value = Math.floor(Math.random() * (52 - 51 + 1)) + 51 / 10
+            value = ((Math.random() * (52 - 51)) + 51) / 10
         }
 
-        value = Math.round(value * 1000) / 1000
+        value = Math.round(value * 100) / 100
     } else if (itemName.includes("kubejs:defense_blessing")) {
         attribute = "minecraft:generic.armor"
         if (tier == 1) {
-            value = Math.random() * (15 - 10 + 1) + 10
+            value = (Math.random() * (15 - 10)) + 10
         } else if (tier == 2) {
-            value = Math.random() * (18 - 15 + 1) + 15
+            value = (Math.random() * (18 - 15)) + 15
         } else if (tier == 3) {
-            value = Math.random() * (19 - 18 + 1) + 18
+            value = (Math.random() * (19 - 18)) + 18
         } else if (tier == 4) {
-            value = Math.random() * (20 - 19 + 1) + 19
+            value = (Math.random() * (20 - 19)) + 19
         }
 
         value = Math.round(value * 100) / 100
     } else if (itemName.includes("kubejs:gimlet_blessing")) {
         attribute = "epicfight:armor_negation"
         if (tier == 1) {
-            value = Math.random() * (60 - 50 + 1) + 50
+            value = (Math.random() * (60 - 50)) + 50
         } else if (tier == 2) {
-            value = Math.random() * (70 - 60 + 1) + 60
+            value = (Math.random() * (70 - 60)) + 60
         } else if (tier == 3) {
-            value = Math.random() * (75 - 70 + 1) + 70
+            value = (Math.random() * (75 - 70)) + 70
         } else if (tier == 4) {
-            value = Math.random() * (80 - 75 + 1) + 75
+            value = (Math.random() * (80 - 75)) + 75
         }
 
-        value = Math.round(value * 100) / 100
+        value = Math.round(value * 10) / 10
     } else if (itemName.includes("kubejs:enduring_blessing")) {
         attribute = "epicfight:staminar"
         if (tier == 1) {
-            value = Math.random() * (50 - 44 + 1) + 44
+            value = (Math.random() * (50 - 44)) + 44
         } else if (tier == 2) {
-            value = Math.random() * (55 - 50 + 1) + 50
+            value = (Math.random() * (55 - 50)) + 50
         } else if (tier == 3) {
-            value = Math.random() * (58 - 55 + 1) + 55
+            value = (Math.random() * (58 - 55)) + 55
         } else if (tier == 4) {
-            value = Math.random() * (60 - 58 + 1) + 58
+            value = (Math.random() * (60 - 58)) + 58
         }
 
         value = Math.round(value * 100) / 100
     } else if (itemName.includes("kubejs:recruit_blessing")) {
         attribute = "epicfight:stamina_regen"
         if (tier == 1) {
-            value = Math.floor(Math.random() * (6 - 1 + 1)) + 1
+            value = (Math.random() * (6 - 1)) + 1
         } else if (tier == 2) {
-            value = Math.floor(Math.random() * (12 - 6 + 1)) + 6
+            value = (Math.random() * (12 - 6)) + 6
         } else if (tier == 3) {
-            value = Math.floor(Math.random() * (18 - 12 + 1)) + 12
+            value = (Math.random() * (18 - 12)) + 12
         } else if (tier == 4) {
-            value = Math.floor(Math.random() * (20 - 18 + 1)) + 18
+            value = (Math.random() * (20 - 18)) + 18
         }
+
+        value = Math.round(value * 1) / 1
     }
 
-    server.runCommandSilent(`attribute ${player.name.getString()} ${attribute} base set ${value}`)
+    updatePlayerStats(player.name.getString(), attribute, value)
+    server.tell(
+        "SERVER TELL: " + player.name.getString() + " " + attribute + " " + value
+    )
     mainHand.setCount(0)
 }
+
+ServerEvents.tick(_ => {
+    let maxServerTick = 5 * 60 * TICKS_PER_SECONDS
+
+    if ((globalServerTickCounter % maxServerTick) == 0) {
+        console.log("globalPlayerData\n" + JSON.stringify(globalPlayerData, null, 2))
+    }
+
+    globalServerTickCounter = ((globalServerTickCounter + 1) % maxServerTick)
+})
+
+function resetAttributeSetRetries(event) {
+    let player = event.player
+    let playerName = player.name.getString()
+    let playerData = globalPlayerData.find(
+        element => element.name === playerName
+    )
+
+    if (playerData && (playerData.retries != 0))
+        playerData.retries = 0
+}
+
+ServerEvents.loaded(serverLoadedEV => {
+    resetAttributeSetRetries(serverLoadedEV)
+})
+
+PlayerEvents.loggedIn(playerLoggedInEV => {
+    resetAttributeSetRetries(playerLoggedInEV)
+})
+
+PlayerEvents.respawned(playerRespawnEV => {
+    resetAttributeSetRetries(playerRespawnEV)
+})
 
 ItemEvents.rightClicked(itemRightClickedEV => {
     let item = itemRightClickedEV.item
