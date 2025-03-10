@@ -655,12 +655,11 @@
         "mob": "aerialhell:mud_cycle_mage",
         "when": "finalize",
         "result": "allow",
-        "healthset": 60000,
-        "damageset": 100,
+        "healthset": 10000,
+        "damageset": 50,
         "armorset": 30,
         "armortoughnessset": 20,
         "potion": [
-            "minecraft:regeneration,-1,31",
             "minecraft:glowing,-1,1"
         ]
     },
@@ -668,12 +667,11 @@
         "mob": "aerialhell:lunatic_priest",
         "when": "finalize",
         "result": "allow",
-        "healthset": 60000,
-        "damageset": 100,
+        "healthset": 10000,
+        "damageset": 50,
         "armorset": 30,
         "armortoughnessset": 20,
         "potion": [
-            "minecraft:regeneration,-1,31",
             "minecraft:glowing,-1,1"
         ]
     },
@@ -681,12 +679,11 @@
         "mob": "aerialhell:chained_god",
         "when": "onjoin",
         "result": "allow",
-        "healthset": 70000,
-        "damageset": 120,
+        "healthset": 15000,
+        "damageset": 60,
         "armorset": 30,
         "armortoughnessset": 20,
         "potion": [
-            "minecraft:regeneration,-1,31",
             "minecraft:glowing,-1,1"
         ]
     },
@@ -694,12 +691,11 @@
         "mob": "aerialhell:lilith",
         "when": "onjoin",
         "result": "allow",
-        "healthset": 80000,
-        "damageset": 150,
+        "healthset": 20000,
+        "damageset": 65,
         "armorset": 30,
         "armortoughnessset": 20,
         "potion": [
-            "minecraft:regeneration,-1,31",
             "minecraft:glowing,-1,1"
         ]
     },
