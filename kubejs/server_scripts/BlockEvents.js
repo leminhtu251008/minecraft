@@ -6,6 +6,12 @@ let globalPlayerData = []
 let globalPlayerCommandQueue = []
 let globalDataLock = false
 
+
+let waitingQueue = {
+    "itemTasks": [],
+    "playerTasks": []
+}
+
 const blessingTypes = [
     "health_blessing",
     "strength_blessing",
@@ -14,7 +20,7 @@ const blessingTypes = [
     "gimlet_blessing",
     "defense_blessing",
     "recruit_blessing"
-];
+]
 
 const relics = [
     "relics:amphibian_boot",
@@ -93,6 +99,34 @@ const artifacts = [
     "artifacts:rooted_boots",
     "artifacts:whoopee_cushion"
 ]
+
+function addToWaitingQueue(eventType, ticks, callback) {
+    if (!waitingQueue[eventType]) {
+        console.error(`Invalid event type: ${eventType}`)
+        return
+    }
+
+    waitingQueue[eventType].push({
+        ticks: ticks,
+        callback: callback
+    })
+}
+
+function runWaitingTask(eventType) {
+    if (!waitingQueue[eventType]) {
+        console.error(`Invalid event type or uninitialized queue: ${eventType}`)
+        return
+    }
+
+    for (let i = waitingQueue[eventType].length - 1; i >= 0; i--) {
+        let task = waitingQueue[eventType][i]
+        task.ticks--
+        if (task.ticks <= 0) {
+            task.callback()
+            waitingQueue[eventType].splice(i, 1)
+        }
+    }
+}
 
 function removeBannedItem(player) {
     let mainHand = player.getEquipment("mainhand")
@@ -191,7 +225,7 @@ function updatePlayerAttributes(playerName, attributeName, value) {
 
 function runPlayerCommand(server) {
     let command = globalPlayerCommandQueue.shift()
-    server.runCommandSilent(command);
+    server.runCommandSilent(command)
 }
 
 function handlePlayerEventTick(playerTickEV) {
@@ -209,18 +243,18 @@ function handlePlayerEventTick(playerTickEV) {
         processPlayer()
         globalDataLock = false
     } else {
-        setTimeout(() => {
-            handlePlayerEventTick(playerTickEV)
-        }, 10)
+        addToWaitingQueue("playerTasks", 1, () => {
+            handlePlayerEventTick(itemRightClickedEV)
+        })
     }
 }
 
 PlayerEvents.tick(playerTickEV => {
     handlePlayerEventTick(playerTickEV)
+    runWaitingTask("playerTasks")
 })
 
 function useBlessing(player, itemName) {
-    console.log("useBlessing")
     let playerMOTPLevel = player.getForgePersistentData().getInt("motp_level")
 
     if (playerMOTPLevel < 500) {
@@ -335,17 +369,14 @@ function useBlessing(player, itemName) {
 }
 
 function giveRandomBlessing(playerName, tier) {
-    console.log("giveRandomBlessing")
     const blessingsToGive =  blessingTypes.map(() => Math.floor(Math.random() * 2))
 
-    console.log(blessingsToGive)
     blessingsToGive.forEach((count, index) => {
         if (count > 0) {
             const blessingType = blessingTypes[index]
             const blessingItem = `kubejs:${blessingType}_tier_${tier}`
-            const command = `give ${playerName} ${blessingItem} ${count}`;
-            console.log(command)
-            globalPlayerCommandQueue.push(command);
+            const command = `give ${playerName} ${blessingItem} ${count}`
+            globalPlayerCommandQueue.push(command)
         }
     })
 }
@@ -353,7 +384,6 @@ function giveRandomBlessing(playerName, tier) {
 function useBlessingLootBag(player, itemName) {
     let tier = itemName.split("_")[4]
 
-    console.log("useBlessingLootBag")
     giveRandomBlessing(player.name.getString(), tier)
 
     let mainHand = player.getEquipment("mainhand")
@@ -361,15 +391,14 @@ function useBlessingLootBag(player, itemName) {
 }
 
 function giveRandomRelic(playerName) {
-    const randomIndex = Math.floor(Math.random() * relics.length);
-    const randomRelic = relics[randomIndex];
-    const command = `give ${playerName} ${randomRelic}`;
+    const randomIndex = Math.floor(Math.random() * relics.length)
+    const randomRelic = relics[randomIndex]
+    const command = `give ${playerName} ${randomRelic}`
 
-    globalPlayerCommandQueue.push(command);
+    globalPlayerCommandQueue.push(command)
 }
 
 function useRelicLootBag(player) {
-    console.log("useRelicLootBag")
     giveRandomRelic(player.name.getString())
 
     let mainHand = player.getEquipment("mainhand")
@@ -377,15 +406,14 @@ function useRelicLootBag(player) {
 }
 
 function giveRandomArtifact(playerName) {
-    const randomIndex = Math.floor(Math.random() * artifacts.length);
-    const randomArtifact = artifacts[randomIndex];
-    const command = `give ${playerName} ${randomArtifact}`;
+    const randomIndex = Math.floor(Math.random() * artifacts.length)
+    const randomArtifact = artifacts[randomIndex]
+    const command = `give ${playerName} ${randomArtifact}`
 
-    globalPlayerCommandQueue.push(command);
+    globalPlayerCommandQueue.push(command)
 }
 
 function useArtifactLootBag(player) {
-    console.log("useArtifactLootBag")
     giveRandomArtifact(player.name.getString())
 
     let mainHand = player.getEquipment("mainhand")
@@ -417,18 +445,12 @@ function handleItemRightClickedEvent(itemRightClickedEV) {
             }
     
             if (itemName.includes("blessing_loot_bag")) {
-                let server = itemRightClickedEV.server
-    
-                console.log("BLESSING LOOT BAG")
                 useBlessingLootBag(player, itemName)
             } else if (itemName.includes("blessing")) {
-                console.log("BLESSING")
                 useBlessing(player, itemName)
             } else if (itemName.includes("relic_loot_bag")) {
-                console.log("RELIC LOOT BAG")
                 useRelicLootBag(player)
             } else if (itemName.includes("artifact_loot_bag")) {
-                console.log("ARTIFACT LOOT BAG")
                 useArtifactLootBag(player)
             }
         }
@@ -439,14 +461,15 @@ function handleItemRightClickedEvent(itemRightClickedEV) {
         processItem()
         globalDataLock = false
     } else {
-        setTimeout(() => {
-            handleItemRightClickedEvent(playerTickEV)
-        }, 10)
+        addToWaitingQueue("itemTasks", 1, () => {
+            handleItemRightClickedEvent(itemRightClickedEV)
+        })
     }
 }
 
 ItemEvents.rightClicked(itemRightClickedEV => {
     handleItemRightClickedEvent(itemRightClickedEV)
+    runWaitingTask("itemTasks")
 })
 
 function resetAttributeSetRetries(event) {
@@ -466,26 +489,24 @@ function resetAttributeSetRetries(event) {
         processReload()
         globalDataLock = false
     } else {
-        setTimeout(() => {
-            resetAttributeSetRetries(playerTickEV)
-        }, 10)
+        addToWaitingQueue("playerTasks", 1, () => {
+            resetAttributeSetRetries(itemRightClickedEV)
+        })
     }
 }
 
-ServerEvents.loaded(serverLoadedEV => {
-    resetAttributeSetRetries(serverLoadedEV)
-})
-
 PlayerEvents.loggedIn(playerLoggedInEV => {
     resetAttributeSetRetries(playerLoggedInEV)
+    runWaitingTask("playerTasks")
 })
 
 PlayerEvents.respawned(playerRespawnEV => {
     resetAttributeSetRetries(playerRespawnEV)
+    runWaitingTask("playerTasks")
 })
 
 ServerEvents.tick(_ => {
-    let maxServerTick = 60
+    let maxServerTick = 20 * 60 * TICKS_PER_SECONDS
 
     if ((globalServerTickCounter % maxServerTick) == 0) {
         console.log("globalPlayerData\n" + JSON.stringify(globalPlayerData, null, 2))
