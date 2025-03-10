@@ -1096,7 +1096,9 @@ LootJS.modifiers(lootModifierEvent => {
                 .when((c) => c.randomChance(0.2)),
             LootEntry
                 .of("kubejs:blessing_loot_bag_tier_4", 5)
-                .when((c) => c.randomChance(0.5))
+                .when((c) => c.randomChance(0.5)),
+            LootEntry.of("kubejs:relic_loot_bag", 5),
+            LootEntry.of("kubejs:artifact_loot_bag", 5)
         )
 
     lootModifierEvent
@@ -1114,7 +1116,9 @@ LootJS.modifiers(lootModifierEvent => {
                 .when((c) => c.randomChance(0.2)),
             LootEntry
                 .of("kubejs:blessing_loot_bag_tier_4", 5)
-                .when((c) => c.randomChance(0.5))
+                .when((c) => c.randomChance(0.5)),
+            LootEntry.of("kubejs:relic_loot_bag", 5),
+            LootEntry.of("kubejs:artifact_loot_bag", 5)
         )
 
     lootModifierEvent
@@ -1128,7 +1132,9 @@ LootJS.modifiers(lootModifierEvent => {
                 .when((c) => c.randomChance(0.2)),
             LootEntry
                 .of("kubejs:blessing_loot_bag_tier_4", 5)
-                .when((c) => c.randomChance(0.5))
+                .when((c) => c.randomChance(0.5)),
+            LootEntry.of("kubejs:relic_loot_bag", 5),
+            LootEntry.of("kubejs:artifact_loot_bag", 5)
         )
 
     lootModifierEvent
@@ -1142,7 +1148,9 @@ LootJS.modifiers(lootModifierEvent => {
                 .when((c) => c.randomChance(0.2)),
             LootEntry
                 .of("kubejs:blessing_loot_bag_tier_4", 5)
-                .when((c) => c.randomChance(0.5))
+                .when((c) => c.randomChance(0.5)),
+            LootEntry.of("kubejs:relic_loot_bag", 5),
+            LootEntry.of("kubejs:artifact_loot_bag", 5)
         )
 
     lootModifierEvent
@@ -1161,7 +1169,9 @@ LootJS.modifiers(lootModifierEvent => {
             LootEntry.of("minecraft:lionfish", 5),
             LootEntry
                 .of("kubejs:blessing_loot_bag_tier_4", 5)
-                .when((c) => c.randomChance(0.5))
+                .when((c) => c.randomChance(0.5)),
+            LootEntry.of("kubejs:relic_loot_bag", 5),
+            LootEntry.of("kubejs:artifact_loot_bag", 5)
         )
 
     lootModifierEvent
@@ -1181,7 +1191,9 @@ LootJS.modifiers(lootModifierEvent => {
             LootEntry.of("minecraft:koboleton_bone", 10),
             LootEntry
                 .of("kubejs:blessing_loot_bag_tier_4", 5)
-                .when((c) => c.randomChance(0.5))
+                .when((c) => c.randomChance(0.5)),
+            LootEntry.of("kubejs:relic_loot_bag", 5),
+            LootEntry.of("kubejs:artifact_loot_bag", 5)
         )
 
     lootModifierEvent
@@ -1201,7 +1213,9 @@ LootJS.modifiers(lootModifierEvent => {
             LootEntry.of("minecraft:koboleton_bone", 10),
             LootEntry
                 .of("kubejs:blessing_loot_bag_tier_4", 5)
-                .when((c) => c.randomChance(0.5))
+                .when((c) => c.randomChance(0.5)),
+            LootEntry.of("kubejs:relic_loot_bag", 5),
+            LootEntry.of("kubejs:artifact_loot_bag", 5)
 
         )
 
@@ -1232,7 +1246,9 @@ LootJS.modifiers(lootModifierEvent => {
                 .when((c) => c.randomChance(0.2)),
             LootEntry
                 .of("kubejs:blessing_loot_bag_tier_4", 5)
-                .when((c) => c.randomChance(0.5))
+                .when((c) => c.randomChance(0.5)),
+            LootEntry.of("kubejs:relic_loot_bag", 5),
+            LootEntry.of("kubejs:artifact_loot_bag", 5)
         )
 
     lootModifierEvent
@@ -1270,7 +1286,9 @@ LootJS.modifiers(lootModifierEvent => {
                 .when((c) => c.randomChance(0.2)),
             LootEntry
                 .of("kubejs:blessing_loot_bag_tier_4", 5)
-                .when((c) => c.randomChance(0.5))
+                .when((c) => c.randomChance(0.5)),
+            LootEntry.of("kubejs:relic_loot_bag", 5),
+            LootEntry.of("kubejs:artifact_loot_bag", 5)
         )
 
     lootModifierEvent
@@ -1286,10 +1304,7 @@ LootJS.modifiers(lootModifierEvent => {
         .addLoot(
             LootEntry
                 .of("aerialhell:mud_cycle_mage_trophy", 5)        
-                .when((c) => c.randomChance(0.2)),
-            LootEntry
-                .of("kubejs:blessing_loot_bag_tier_1", 5)
-                .when((c) => c.randomChance(0.5))            
+                .when((c) => c.randomChance(0.2))
         )
 
     lootModifierEvent
@@ -1301,14 +1316,10 @@ LootJS.modifiers(lootModifierEvent => {
         .matchEquip("chest", Item.of("aerialhell:lunatic_chestplate"))
         .matchEquip("legs", Item.of("aerialhell:lunatic_leggings"))
         .matchEquip("feet", Item.of("aerialhell:lunatic_boots"))
-        .matchEquip("mainhand", Item.of("aerialhell:lunatic_sword"))
         .addLoot(
             LootEntry
                 .of("aerialhell:lunar_priest_trophy", 5)        
-                .when((c) => c.randomChance(0.2)),
-            LootEntry
-                .of("kubejs:blessing_loot_bag_tier_1", 5)
-                .when((c) => c.randomChance(0.5))   
+                .when((c) => c.randomChance(0.2))
         )
 
     lootModifierEvent
@@ -1320,14 +1331,10 @@ LootJS.modifiers(lootModifierEvent => {
         .matchEquip("chest", Item.of("aerialhell:volucite_chestplate"))
         .matchEquip("legs", Item.of("aerialhell:volucite_leggings"))
         .matchEquip("feet", Item.of("aerialhell:volucite_boots"))
-        .matchEquip("mainhand", Item.of("aerialhell:volucite_sword"))
         .addLoot(
             LootEntry
                 .of("aerialhell:chained_god_trophy", 5)        
-                .when((c) => c.randomChance(0.2)),
-            LootEntry
-                .of("kubejs:blessing_loot_bag_tier_1", 5)
-                .when((c) => c.randomChance(0.5))     
+                .when((c) => c.randomChance(0.2))
         )
 
     lootModifierEvent
@@ -1339,14 +1346,10 @@ LootJS.modifiers(lootModifierEvent => {
         .matchEquip("chest", Item.of("aerialhell:arsonist_chestplate"))
         .matchEquip("legs", Item.of("aerialhell:arsonist_leggings"))
         .matchEquip("feet", Item.of("aerialhell:arsonist_boots"))
-        .matchEquip("mainhand", Item.of("aerialhell:arsonist_sword"))
         .addLoot(
             LootEntry
                 .of("aerialhell:lilith_trophy", 5)        
-                .when((c) => c.randomChance(0.2)),
-            LootEntry
-                .of("kubejs:blessing_loot_bag_tier_2", 5)
-                .when((c) => c.randomChance(0.5))   
+                .when((c) => c.randomChance(0.2))
         )
 
     lootModifierEvent
@@ -1365,7 +1368,13 @@ LootJS.modifiers(lootModifierEvent => {
                 .when((c) => c.randomChance(0.2)),
             LootEntry
                 .of("kubejs:blessing_loot_bag_tier_1", 5)
-                .when((c) => c.randomChance(0.5))   
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:relic_loot_bag", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:artifact_loot_bag", 5)
+                .when((c) => c.randomChance(0.2))
         )
 
     lootModifierEvent
@@ -1383,7 +1392,13 @@ LootJS.modifiers(lootModifierEvent => {
                 .when((c) => c.randomChance(0.2)),
             LootEntry
                 .of("kubejs:blessing_loot_bag_tier_1", 5)
-                .when((c) => c.randomChance(0.5))   
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:relic_loot_bag", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:artifact_loot_bag", 5)
+                .when((c) => c.randomChance(0.2))
         )
 
     lootModifierEvent
@@ -1401,7 +1416,13 @@ LootJS.modifiers(lootModifierEvent => {
                 .when((c) => c.randomChance(0.2)),
             LootEntry
                 .of("kubejs:blessing_loot_bag_tier_1", 5)
-                .when((c) => c.randomChance(0.5))   
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:relic_loot_bag", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:artifact_loot_bag", 5)
+                .when((c) => c.randomChance(0.5))
         )
 
     lootModifierEvent
@@ -1415,10 +1436,16 @@ LootJS.modifiers(lootModifierEvent => {
         .matchEquip("mainhand", Item.of("blue_skies:different_sword"))
         .addLoot(
             LootEntry
-                .of("kubejs:spider_artifact", 5)        
+                .of("kubejs:spider_artifact", 5)
                 .when((c) => c.randomChance(0.2)),
             LootEntry
                 .of("kubejs:blessing_loot_bag_tier_2", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:relic_loot_bag", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:artifact_loot_bag", 5)
                 .when((c) => c.randomChance(0.5))
         )
 
@@ -1442,6 +1469,12 @@ LootJS.modifiers(lootModifierEvent => {
             LootEntry.of("minecraft:wither_skeleton_skull", 3),
             LootEntry
                 .of("kubejs:blessing_loot_bag_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:relic_loot_bag", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:artifact_loot_bag", 5)
                 .when((c) => c.randomChance(0.5))
         )
 
@@ -1452,15 +1485,27 @@ LootJS.modifiers(lootModifierEvent => {
             LootEntry.of("minecraft:wither_skeleton_skull", 3),
             LootEntry
                 .of("kubejs:blessing_loot_bag_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:relic_loot_bag", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:artifact_loot_bag", 5)
                 .when((c) => c.randomChance(0.5))
-            )
+        )
 
     lootModifierEvent
         .addEntityLootModifier("slu:boss_mohg")
         .killedByPlayer()
         .addLoot(LootEntry.of("minecraft:wither_skeleton_skull", 3),
-        LootEntry
+            LootEntry
                 .of("kubejs:blessing_loot_bag_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:relic_loot_bag", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:artifact_loot_bag", 5)
                 .when((c) => c.randomChance(0.5))
         )
 
@@ -1471,8 +1516,14 @@ LootJS.modifiers(lootModifierEvent => {
             LootEntry.of("minecraft:wither_skeleton_skull", 3),
             LootEntry
                 .of("kubejs:blessing_loot_bag_tier_3", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:relic_loot_bag", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry
+                .of("kubejs:artifact_loot_bag", 5)
                 .when((c) => c.randomChance(0.5))
-            )
+        )
 
     lootModifierEvent
         .addEntityLootModifier("slu:boss_minecraft_lord")
@@ -1481,6 +1532,34 @@ LootJS.modifiers(lootModifierEvent => {
         )
         .addLoot(
             LootEntry.of("minecraft:wither_skeleton_skull", 3)
+        )
+
+        lootModifierEvent
+        .addEntityLootModifier("bosses_of_mass_destruction:lich")
+        .removeLoot("bosses_of_mass_destruction:ancient_anima")
+        .addLoot(
+            LootEntry
+                .of("bosses_of_mass_destruction:ancient_anima", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:blessing_loot_bag_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry.of("kubejs:relic_loot_bag", 5),
+            LootEntry.of("kubejs:artifact_loot_bag", 5)
+        )
+
+    lootModifierEvent
+        .addEntityLootModifier("bosses_of_mass_destruction:void_blossom")
+        .removeLoot("bosses_of_mass_destruction:void_thorn")
+        .addLoot(
+            LootEntry
+                .of("bosses_of_mass_destruction:void_thorn", 5)
+                .when((c) => c.randomChance(0.2)),
+            LootEntry
+                .of("kubejs:blessing_loot_bag_tier_4", 5)
+                .when((c) => c.randomChance(0.5)),
+            LootEntry.of("kubejs:relic_loot_bag", 5),
+            LootEntry.of("kubejs:artifact_loot_bag", 5)
         )
 
     lootModifierEvent
@@ -1765,29 +1844,4 @@ LootJS.modifiers(lootModifierEvent => {
             p.addLoot("minecraft:book", "minecraft:book", "minecraft:book", "minecraft:book")
             p.enchantRandomly()
         })
-
-
-    lootModifierEvent
-        .addEntityLootModifier("bosses_of_mass_destruction:lich")
-        .removeLoot("bosses_of_mass_destruction:ancient_anima")
-        .addLoot(
-            LootEntry
-                .of("bosses_of_mass_destruction:ancient_anima", 5)
-                .when((c) => c.randomChance(0.2)),
-            LootEntry
-                .of("kubejs:blessing_loot_bag_tier_4", 5)
-                .when((c) => c.randomChance(0.5))
-        )
-
-    lootModifierEvent
-        .addEntityLootModifier("bosses_of_mass_destruction:void_blossom")
-        .removeLoot("bosses_of_mass_destruction:void_thorn")
-        .addLoot(
-            LootEntry
-                .of("bosses_of_mass_destruction:void_thorn", 5)
-                .when((c) => c.randomChance(0.2)),
-            LootEntry
-                .of("kubejs:blessing_loot_bag_tier_4", 5)
-                .when((c) => c.randomChance(0.5))
-        )
 })
